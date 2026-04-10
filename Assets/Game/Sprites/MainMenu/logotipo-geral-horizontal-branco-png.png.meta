@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 63f8f27912ba67c40937bbe4b75947c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5229602135048535458
+    second: logotipo-geral-horizontal-branco-png_0
+  - first:
+      213: 3940455684746607548
+    second: logotipo-geral-horizontal-branco-png_1
+  - first:
+      213: 2720746095264335533
+    second: logotipo-geral-horizontal-branco-png_2
+  - first:
+      213: 474407342796342302
+    second: logotipo-geral-horizontal-branco-png_3
+  - first:
+      213: 3896205505402368577
+    second: logotipo-geral-horizontal-branco-png_4
+  - first:
+      213: -1623028281739239841
+    second: logotipo-geral-horizontal-branco-png_5
+  - first:
+      213: -5346914158140823217
+    second: logotipo-geral-horizontal-branco-png_6
+  - first:
+      213: 7393264552191286585
+    second: logotipo-geral-horizontal-branco-png_7
+  - first:
+      213: -5944022420086065586
+    second: logotipo-geral-horizontal-branco-png_8
+  - first:
+      213: 7845118528148042549
+    second: logotipo-geral-horizontal-branco-png_9
+  - first:
+      213: 1932706175503607598
+    second: logotipo-geral-horizontal-branco-png_10
+  - first:
+      213: 6879833694382087180
+    second: logotipo-geral-horizontal-branco-png_11
+  - first:
+      213: 2442677482083485508
+    second: logotipo-geral-horizontal-branco-png_12
+  - first:
+      213: -2217043821344686708
+    second: logotipo-geral-horizontal-branco-png_13
+  - first:
+      213: 2538611262802439757
+    second: logotipo-geral-horizontal-branco-png_14
+  - first:
+      213: -5921929587593589768
+    second: logotipo-geral-horizontal-branco-png_15
+  - first:
+      213: -2290259955206513904
+    second: logotipo-geral-horizontal-branco-png_16
+  - first:
+      213: -5942491997097809985
+    second: logotipo-geral-horizontal-branco-png_17
+  - first:
+      213: 3344692429197849558
+    second: logotipo-geral-horizontal-branco-png_18
+  - first:
+      213: -9185307218183357347
+    second: logotipo-geral-horizontal-branco-png_19
+  - first:
+      213: 5216227877882984037
+    second: logotipo-geral-horizontal-branco-png_20
+  - first:
+      213: 7863629434450274538
+    second: logotipo-geral-horizontal-branco-png_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logotipo-geral-horizontal-branco-png_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52cec7d098bc67b0800000000000000
+      internalID: -5229602135048535458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 263e3f70baa931a47907139269456638
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":480.0,"y":149.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      logotipo-geral-horizontal-branco-png_0: -5229602135048535458
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
