@@ -109,7 +109,11 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ThomasIdle
+<<<<<<< HEAD
   m_Speed: 0.5
+=======
+  m_Speed: 1
+>>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7263170552596748050}
@@ -168,6 +172,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 384155097751791661}
+<<<<<<< HEAD
     m_Position: {x: 30, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 9111686856567427863}
@@ -175,6 +180,15 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 3005907711996842569}
     m_Position: {x: 170, y: 230, z: 0}
+=======
+    m_Position: {x: 40, y: 200, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 9111686856567427863}
+    m_Position: {x: 300, y: 200, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 3005907711996842569}
+    m_Position: {x: 180.49455, y: 270.8022, z: 0}
+>>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
@@ -182,8 +196,13 @@ AnimatorStateMachine:
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
+<<<<<<< HEAD
   m_EntryPosition: {x: 50, y: 70, z: 0}
   m_ExitPosition: {x: 320, y: 70, z: 0}
+=======
+  m_EntryPosition: {x: 60, y: 100, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+>>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 384155097751791661}
 --- !u!1102 &3005907711996842569
