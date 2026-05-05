@@ -1,20 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 05368cb4b00010d4cb902f02207ef261
-=======
-guid: 4b8073885e96b38418a9f8cab82df9c9
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -8850774607195115043
-    second: hiro_0
-  - first:
-      213: 7999044350188178835
-    second: hiro_1
-  - first:
-      213: 5964423817255075067
-    second: hiro_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,9 +37,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -61,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -98,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,27 +114,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD
-        y: 63
-        width: 96
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd1761f536bbb2580800000000000000
-      internalID: -8850774607195115043
+      spriteID: e911a146e2858d1469b0d0f0e3a43f6e
+      internalID: -1009283528
       vertices: []
       indices: 
       edges: []
@@ -156,29 +135,20 @@ TextureImporter:
       name: hiro_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 0
-        y: 31
-        width: 96
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
         x: 32
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39dcf8ba470520f60800000000000000
-      internalID: 7999044350188178835
+      spriteID: d144778c7f51a6f4f9ba054dca5abde4
+      internalID: 1816456505
       vertices: []
       indices: 
       edges: []
@@ -187,35 +157,24 @@ TextureImporter:
       name: hiro_2
       rect:
         serializedVersion: 2
-<<<<<<< HEAD
-        x: 0
-        y: 0
-        width: 96
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
         x: 64
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bfc3e556cd3e5c250800000000000000
-      internalID: 5964423817255075067
+      spriteID: 712532f7a57a0064f88559d85872196c
+      internalID: 1110161167
       vertices: []
       indices: 
       edges: []
       weights: []
-<<<<<<< HEAD
-=======
     - serializedVersion: 2
       name: hiro_3
       rect:
@@ -232,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f35ef0906b60f449aac26eef49e3d8
-      internalID: -943767153
+      spriteID: 52d335f6880f7884db0aa40be8bd0625
+      internalID: 1406031174
       vertices: []
       indices: 
       edges: []
@@ -254,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96cd9e8007b264e4aac63400632e294b
-      internalID: -516967815
+      spriteID: 00a5a7df8c673f34fadb77a342324c74
+      internalID: -1051164801
       vertices: []
       indices: 
       edges: []
@@ -276,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7dd96ca10365c438dadb06582f25e4
-      internalID: -1742207594
+      spriteID: 69c9ca6935d5f7d4193f2c12ad90eac7
+      internalID: 326864578
       vertices: []
       indices: 
       edges: []
@@ -298,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aa170f399d154043bbcc0c1e8fea55e
-      internalID: -2091995743
+      spriteID: d0a762cd88b3c324291b31e842e7c952
+      internalID: 786667159
       vertices: []
       indices: 
       edges: []
@@ -320,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2e474f36d9e302449fee3fba1243955
-      internalID: 1546589482
+      spriteID: 34b187657a459bf49bd8b08279c4466f
+      internalID: 56561330
       vertices: []
       indices: 
       edges: []
@@ -342,22 +301,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de6fed7f18e52be4fb4f443332c6fd62
-      internalID: -89369528
+      spriteID: 71ef0b95020170b4b8f6a6c0b0cefee4
+      internalID: -785043137
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 
-=======
-    spriteID: 9472d0bd7be1f89448d9b405ed887d21
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
+    spriteID: eb511310fb43e624db57a324d8c1d293
     internalID: 0
     vertices: []
     indices: 
@@ -365,26 +319,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-<<<<<<< HEAD
-      entries: []
-=======
       entries:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
     nameFileIdTable:
-      hiro_0: -8850774607195115043
-      hiro_1: 7999044350188178835
-      hiro_2: 5964423817255075067
-<<<<<<< HEAD
-=======
-      hiro_3: -943767153
-      hiro_4: -516967815
-      hiro_5: -1742207594
-      hiro_6: -2091995743
-      hiro_7: 1546589482
-      hiro_8: -89369528
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
+      hiro_0: -1009283528
+      hiro_1: 1816456505
+      hiro_2: 1110161167
+      hiro_3: 1406031174
+      hiro_4: -1051164801
+      hiro_5: 326864578
+      hiro_6: 786667159
+      hiro_7: 56561330
+      hiro_8: -785043137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
