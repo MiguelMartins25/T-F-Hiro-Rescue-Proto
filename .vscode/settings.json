@@ -56,9 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-<<<<<<< HEAD
+    "T-F-Hiro-Rescue-Proto-master.slnx=======dotnet.defaultSolution": "Hiro Rescue.slnx>>>>>>>dac09b30eb13336606a50f46272859a5eb88198f",
     "dotnet.defaultSolution": "T-F-Hiro-Rescue-Proto-master.slnx"
-=======
-    "dotnet.defaultSolution": "Hiro Rescue.slnx"
->>>>>>> dac09b30eb13336606a50f46272859a5eb88198f
 }
