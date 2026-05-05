@@ -1,7 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-=======
 --- !u!114 &-9181970931238386896
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -321,7 +319,6 @@ MonoBehaviour:
   cropToFit:
     m_OverrideState: 1
     m_Value: 1
->>>>>>> master
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,9 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
   m_Name: DefaultVolumeProfile
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  components: []
-=======
   components:
   - {fileID: 5499352730141097882}
   - {fileID: -8217500555476291798}
@@ -802,4 +796,3 @@ MonoBehaviour:
   worldOffset:
     m_OverrideState: 1
     m_Value: {x: 0, y: 0, z: 0}
->>>>>>> master
