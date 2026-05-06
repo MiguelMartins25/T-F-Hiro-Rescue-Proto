@@ -1718,26 +1718,6 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &601010661
 CanvasRenderer:
-=======
-  m_GameObject: {fileID: 548829364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: Enables component CloudsBackground2_0 (1) (UnityEngine.Animator)
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 548829369}
-  state: 0
---- !u!114 &548829368
-MonoBehaviour:
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2390,7 +2370,6 @@ MonoBehaviour:
   startTriggered: 0
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
-<<<<<<< HEAD
   timeInterval: {x: 1, y: 1}
 --- !u!114 &906936695
 MonoBehaviour:
@@ -2679,18 +2658,10 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!1 &1036574869
 GameObject:
-=======
-  m_GameObject: {fileID: 1049697730}
-  m_CullTransparentMesh: 1
---- !u!95 &1049697734
-Animator:
-  serializedVersion: 7
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036574872}
@@ -3309,18 +3280,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ExitGame
 --- !u!1 &1438269357
 GameObject:
-=======
-  m_GameObject: {fileID: 1401264706}
-  m_CullTransparentMesh: 1
---- !u!95 &1401264711
-Animator:
-  serializedVersion: 7
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1438269359}
@@ -3834,10 +3797,6 @@ GameObject:
   m_IsActive: 1
 --- !u!224 &1550719960
 RectTransform:
-=======
---- !u!82 &1438269358
-AudioSource:
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3847,7 +3806,6 @@ AudioSource:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children: []
   m_Father: {fileID: 357141656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3858,16 +3816,6 @@ AudioSource:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550719961
 MonoBehaviour:
-=======
-  m_Children:
-  - {fileID: 134686305}
-  - {fileID: 484209608}
-  m_Father: {fileID: 462363142}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1476956533
-Animator:
-  serializedVersion: 7
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4014,10 +3962,6 @@ GameObject:
   m_IsActive: 0
 --- !u!4 &1639911484
 Transform:
-=======
---- !u!114 &1548454539
-MonoBehaviour:
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

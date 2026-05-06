@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: cc728f332a608bf4a8d2e763719af0bc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5761804528917587092
+    second: spencer_0
+  - first:
+      213: 5271824898873284438
+    second: spencer_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,9 +43,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,9 +69,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -85,7 +91,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,10 +129,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cfefc14645519fe4695b8aaaa94541c9
-      internalID: 476052684
+      spriteID: c6b51acee45f900b0800000000000000
+      internalID: -5761804528917587092
       vertices: []
       indices: 
       edges: []
@@ -145,10 +151,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4d305184c75155f439cfaba942c82e86
-      internalID: 621796843
+      spriteID: 657d66f60d8492940800000000000000
+      internalID: 5271824898873284438
       vertices: []
       indices: 
       edges: []
@@ -169,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2a57c0d6a4b384393b77ef228d45db
-      internalID: 32981677
+      spriteID: bf23610803dc3594a975a96bb756a61b
+      internalID: -733946882
       vertices: []
       indices: 
       edges: []
@@ -191,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7d6367ace2ca4e499a789b06fb48ef0
-      internalID: -495939714
+      spriteID: 56ebd355e9173f0429992af39c484721
+      internalID: -484072220
       vertices: []
       indices: 
       edges: []
@@ -213,8 +219,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8378296eb9d51843887050685ba0227
-      internalID: -1943424450
+      spriteID: fc05367288e3e7a4eb803009201414cd
+      internalID: 74568959
       vertices: []
       indices: 
       edges: []
@@ -235,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052c0e5ed2423d14e99148189df4c9bf
-      internalID: 2009024514
+      spriteID: 40ed8dc6a987c8c40bbf05df57c29cdd
+      internalID: -1812640677
       vertices: []
       indices: 
       edges: []
@@ -245,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c26469e61daa57a4dace534c52af1533
+    spriteID: 121e1f9e9899b0345b3fee36dad3d339
     internalID: 0
     vertices: []
     indices: 
@@ -257,12 +263,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      spencer_0: 476052684
-      spencer_1: 621796843
-      spencer_2: 32981677
-      spencer_3: -495939714
-      spencer_4: -1943424450
-      spencer_5: 2009024514
+      spencer_0: -5761804528917587092
+      spencer_1: 5271824898873284438
+      spencer_2: -733946882
+      spencer_3: -484072220
+      spencer_4: 74568959
+      spencer_5: -1812640677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
