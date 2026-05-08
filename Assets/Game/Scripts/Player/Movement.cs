@@ -1,16 +1,22 @@
+using System;
+using System.Numerics;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float speed = 0;
+    private bool facingRight = true;
 
-    // Update is called once per frame
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] LayerMask groundLayer;
+    
+    private UnityEngine.Vector2 movement;
+
     void Update()
     {
-        
+        float input = Input.GetAxis("Horizontal");
+        movement.x += input * accel * Time.deltaTime;
+        transform.Translate(movement);
     }
 }
