@@ -1127,7 +1127,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1297665070239915762, guid: e00f4e03234f87343b4868bc0570c822, type: 3}
+  m_Sprite: {fileID: -5518174422928276195, guid: 563ec67bae2ec3741a84fdcb839bb518, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2336,14 +2336,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene Level 1
+  _explanation: Switches to scene LoadingScreen
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Level 1
+  sceneName: LoadingScreen
 --- !u!114 &906936694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
   _explanation: "Every 5 seconds, trigger the actions::\n          switches to scene
-    Level 1\n"
+    LoadingScreen\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
