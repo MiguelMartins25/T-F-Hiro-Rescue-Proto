@@ -36,6 +36,10 @@ public class PlayerThomas : MonoBehaviour
     private bool            onGround;
     private bool            onCollision;
     private float           collisionTimer = 0.0f;
+    private float           puffingCooldown = 0.0f;
+
+    public AudioSource source;
+    public AudioClip puffing;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -101,9 +105,17 @@ public class PlayerThomas : MonoBehaviour
                 speed = -speed/2;
                 collisionTimer = 0.0f;
             }
-
+        
+        if (speed != 0 && puffingCooldown == 0.2f)
+        {
+            InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
+        }
     }
 
+    void PuffingSounds()
+    {
+        source.PlayOneShot(puffing);
+    }
 
     void CollisionDetect()
     {
