@@ -3406,6 +3406,7 @@ GameObject:
   - component: {fileID: 190698890}
   - component: {fileID: 190698889}
   - component: {fileID: 190698888}
+  - component: {fileID: 190698893}
   m_Layer: 11
   m_Name: Unbreakables
   m_TagString: Untagged
@@ -8349,6 +8350,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &190698893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190698886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &219993137
 GameObject:
   m_ObjectHideFlags: 0
@@ -16827,7 +16845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &549703680
 Transform:
   m_ObjectHideFlags: 0
@@ -16919,363 +16937,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 549703681}
-    m_ColliderPaths:
-    - - X: 47409999872
-        Y: -17930000384
-      - X: 47409999872
-        Y: -17920000000
-      - X: 47419998208
-        Y: -17920000000
-      - X: 47680000000
-        Y: -17660000256
-      - X: 47680000000
-        Y: -17649999872
-      - X: 47689998336
-        Y: -17649999872
-      - X: 47729999872
-        Y: -17610000384
-      - X: 47729999872
-        Y: -17600000000
-      - X: 47739998208
-        Y: -17600000000
-      - X: 48000000000
-        Y: -17340000256
-      - X: 48000000000
-        Y: -17329999872
-      - X: 48009998336
-        Y: -17329999872
-      - X: 48049999872
-        Y: -17290000384
-      - X: 48049999872
-        Y: -17280000000
-      - X: 48059998208
-        Y: -17280000000
-      - X: 48320000000
-        Y: -17020000256
-      - X: 48320000000
-        Y: -17009999872
-      - X: 48329998336
-        Y: -17009999872
-      - X: 48369999872
-        Y: -16970000384
-      - X: 48369999872
-        Y: -16960000000
-      - X: 48379998208
-        Y: -16960000000
-      - X: 48640000000
-        Y: -16700000256
-      - X: 48640000000
-        Y: -16689999872
-      - X: 48649998336
-        Y: -16689999872
-      - X: 48689999872
-        Y: -16650000384
-      - X: 48689999872
-        Y: -16640000000
-      - X: 48699998208
-        Y: -16640000000
-      - X: 48960000000
-        Y: -16380000256
-      - X: 48960000000
-        Y: -16320000000
-      - X: 48930000896
-        Y: -16320000000
-      - X: 48640000000
-        Y: -16609999872
-      - X: 48640000000
-        Y: -16640000000
-      - X: 48610000896
-        Y: -16640000000
-      - X: 48320000000
-        Y: -16929999872
-      - X: 48320000000
-        Y: -16960000000
-      - X: 48290000896
-        Y: -16960000000
-      - X: 48000000000
-        Y: -17250000896
-      - X: 48000000000
-        Y: -17280000000
-      - X: 47970000896
-        Y: -17280000000
-      - X: 47680000000
-        Y: -17570000896
-      - X: 47680000000
-        Y: -17600000000
-      - X: 47650000896
-        Y: -17600000000
-      - X: 47360000000
-        Y: -17890000896
-      - X: 47360000000
-        Y: -17969999872
-      - X: 47369998336
-        Y: -17969999872
-    - - X: 52160000000
-        Y: -17890000896
-      - X: 51869999104
-        Y: -17600000000
-      - X: 51840000000
-        Y: -17600000000
-      - X: 51840000000
-        Y: -17570000896
-      - X: 51549999104
-        Y: -17280000000
-      - X: 51520000000
-        Y: -17280000000
-      - X: 51520000000
-        Y: -17250000896
-      - X: 51229999104
-        Y: -16960000000
-      - X: 51200000000
-        Y: -16960000000
-      - X: 51200000000
-        Y: -16929999872
-      - X: 50909999104
-        Y: -16640000000
-      - X: 50880000000
-        Y: -16640000000
-      - X: 50880000000
-        Y: -16609999872
-      - X: 50589999104
-        Y: -16320000000
-      - X: 50560000000
-        Y: -16320000000
-      - X: 50560000000
-        Y: -16380000256
-      - X: 50820001792
-        Y: -16640000000
-      - X: 50830000128
-        Y: -16640000000
-      - X: 50830000128
-        Y: -16650000384
-      - X: 50870001664
-        Y: -16689999872
-      - X: 50880000000
-        Y: -16689999872
-      - X: 50880000000
-        Y: -16700000256
-      - X: 51140001792
-        Y: -16960000000
-      - X: 51150000128
-        Y: -16960000000
-      - X: 51150000128
-        Y: -16970000384
-      - X: 51190001664
-        Y: -17009999872
-      - X: 51200000000
-        Y: -17009999872
-      - X: 51200000000
-        Y: -17020000256
-      - X: 51460001792
-        Y: -17280000000
-      - X: 51470000128
-        Y: -17280000000
-      - X: 51470000128
-        Y: -17290000384
-      - X: 51510001664
-        Y: -17329999872
-      - X: 51520000000
-        Y: -17329999872
-      - X: 51520000000
-        Y: -17340000256
-      - X: 51780001792
-        Y: -17600000000
-      - X: 51790000128
-        Y: -17600000000
-      - X: 51790000128
-        Y: -17610000384
-      - X: 51830001664
-        Y: -17649999872
-      - X: 51840000000
-        Y: -17649999872
-      - X: 51840000000
-        Y: -17660000256
-      - X: 52100001792
-        Y: -17920000000
-      - X: 52110000128
-        Y: -17920000000
-      - X: 52110000128
-        Y: -17930000384
-      - X: 52150001664
-        Y: -17969999872
-      - X: 52160000000
-        Y: -17969999872
-    - - X: 6769999872
-        Y: -19530000384
-      - X: 6769999872
-        Y: -19520000000
-      - X: 6780000256
-        Y: -19520000000
-      - X: 7040000000
-        Y: -19260000256
-      - X: 7040000000
-        Y: -19249999872
-      - X: 7049999872
-        Y: -19249999872
-      - X: 7089999872
-        Y: -19210000384
-      - X: 7089999872
-        Y: -19200000000
-      - X: 7100000256
-        Y: -19200000000
-      - X: 7360000000
-        Y: -18940000256
-      - X: 7360000000
-        Y: -18929999872
-      - X: 7369999872
-        Y: -18929999872
-      - X: 7409999872
-        Y: -18890000384
-      - X: 7409999872
-        Y: -18880000000
-      - X: 7420000256
-        Y: -18880000000
-      - X: 7680000000
-        Y: -18620000256
-      - X: 7680000000
-        Y: -18609999872
-      - X: 7689999872
-        Y: -18609999872
-      - X: 7729999872
-        Y: -18570000384
-      - X: 7729999872
-        Y: -18560000000
-      - X: 7740000256
-        Y: -18560000000
-      - X: 8000000000
-        Y: -18300000256
-      - X: 8000000000
-        Y: -18289999872
-      - X: 8009999872
-        Y: -18289999872
-      - X: 8049999872
-        Y: -18250000384
-      - X: 8049999872
-        Y: -18240000000
-      - X: 8060000256
-        Y: -18240000000
-      - X: 8320000000
-        Y: -17980000256
-      - X: 8320000000
-        Y: -17920000000
-      - X: 8289999872
-        Y: -17920000000
-      - X: 8000000000
-        Y: -18210000896
-      - X: 8000000000
-        Y: -18240000000
-      - X: 7969999872
-        Y: -18240000000
-      - X: 7680000000
-        Y: -18530000896
-      - X: 7680000000
-        Y: -18560000000
-      - X: 7649999872
-        Y: -18560000000
-      - X: 7360000000
-        Y: -18850000896
-      - X: 7360000000
-        Y: -18880000000
-      - X: 7329999872
-        Y: -18880000000
-      - X: 7040000000
-        Y: -19170000896
-      - X: 7040000000
-        Y: -19200000000
-      - X: 7009999872
-        Y: -19200000000
-      - X: 6720000000
-        Y: -19490000896
-      - X: 6720000000
-        Y: -19569999872
-      - X: 6729999872
-        Y: -19569999872
-    - - X: 13120000000
-        Y: -19490000896
-      - X: 12830000128
-        Y: -19200000000
-      - X: 12800000000
-        Y: -19200000000
-      - X: 12800000000
-        Y: -19170000896
-      - X: 12510000128
-        Y: -18880000000
-      - X: 12480000000
-        Y: -18880000000
-      - X: 12480000000
-        Y: -18850000896
-      - X: 12190000128
-        Y: -18560000000
-      - X: 12160000000
-        Y: -18560000000
-      - X: 12160000000
-        Y: -18530000896
-      - X: 11870000128
-        Y: -18240000000
-      - X: 11840000000
-        Y: -18240000000
-      - X: 11840000000
-        Y: -18210000896
-      - X: 11550000128
-        Y: -17920000000
-      - X: 11520000000
-        Y: -17920000000
-      - X: 11520000000
-        Y: -17980000256
-      - X: 11779999744
-        Y: -18240000000
-      - X: 11790000128
-        Y: -18240000000
-      - X: 11790000128
-        Y: -18250000384
-      - X: 11829999616
-        Y: -18289999872
-      - X: 11840000000
-        Y: -18289999872
-      - X: 11840000000
-        Y: -18300000256
-      - X: 12099999744
-        Y: -18560000000
-      - X: 12110000128
-        Y: -18560000000
-      - X: 12110000128
-        Y: -18570000384
-      - X: 12149999616
-        Y: -18609999872
-      - X: 12160000000
-        Y: -18609999872
-      - X: 12160000000
-        Y: -18620000256
-      - X: 12419999744
-        Y: -18880000000
-      - X: 12430000128
-        Y: -18880000000
-      - X: 12430000128
-        Y: -18890000384
-      - X: 12469999616
-        Y: -18929999872
-      - X: 12480000000
-        Y: -18929999872
-      - X: 12480000000
-        Y: -18940000256
-      - X: 12739999744
-        Y: -19200000000
-      - X: 12750000128
-        Y: -19200000000
-      - X: 12750000128
-        Y: -19210000384
-      - X: 12789999616
-        Y: -19249999872
-      - X: 12800000000
-        Y: -19249999872
-      - X: 12800000000
-        Y: -19260000256
-      - X: 13059999744
-        Y: -19520000000
-      - X: 13120000000
-        Y: -19520000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 5216, y: -1797}
@@ -290177,6 +289839,7 @@ GameObject:
   - component: {fileID: 1472965683}
   - component: {fileID: 1472965682}
   - component: {fileID: 1472965681}
+  - component: {fileID: 1472965686}
   m_Layer: 11
   m_Name: Breakables
   m_TagString: Untagged
@@ -292395,6 +292058,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1472965686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472965679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &1510820367
 GameObject:
   m_ObjectHideFlags: 0
@@ -293268,9 +292948,9 @@ MonoBehaviour:
   speed: 0
   aceleration: 0
   maxSpeed: 250
-  maxAceleration: 1
+  maxAceleration: 0.5
   acelerationDecrease: 0.1
-  frictionPower: 0.05
+  frictionPower: 0.1
   groundCheck: {fileID: 1377973852130035065}
   groundCheckRadius: 2
   groundLayer:
@@ -293278,7 +292958,7 @@ MonoBehaviour:
     m_Bits: 64
   movingGravity: 5
   playerPivot: {fileID: 7654576803622752811}
-  collisionDetectionRadius: 14
+  collisionDetectionRadius: 15
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2048
@@ -298108,6 +297788,9 @@ GameObject:
   - component: {fileID: 4560246335636383936}
   - component: {fileID: 1596259865}
   - component: {fileID: 1596259864}
+  - component: {fileID: 9174579719839809908}
+  - component: {fileID: 9174579719839809907}
+  - component: {fileID: 9174579719839809906}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -298238,12 +297921,91 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.689415, y: 10.950989}
-  m_Size: {x: 11.821182, y: 25.813599}
-  m_Direction: 0
+  m_Offset: {x: -0.18245894, y: 7.729244}
+  m_Size: {x: 28.827576, y: 13.757843}
+  m_Direction: 1
+--- !u!114 &9174579719839809906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164317965227067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
+  _showInfo: 1
+  _explanation: Toggles object Stunned
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 1235750823}
+  state: 2
+--- !u!114 &9174579719839809907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164317965227067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
+  _showInfo: 1
+  _explanation: Toggles object Stunned
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 365381601}
+  state: 2
+--- !u!114 &9174579719839809908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988164317965227067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b66a51b7fe64c4390ac471b7df316b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnCollision
+  _showInfo: 1
+  _explanation: "When a collision with a bounding volume with tags [Collisionable]
+    starts:\n          toggles object Stunned\n          toggles object Stunned\n
+    then, at 0,5 seconds, \n          toggles object Stunned\n          toggles object
+    Stunned\n"
+  description: 
+  enableTrigger: 1
+  allowRetrigger: 1
+  hasPreconditions: 0
+  preConditions: []
+  actions:
+  - delay: 0
+    action: {fileID: 9174579719839809907}
+  - delay: 0
+    action: {fileID: 9174579719839809906}
+  - delay: 0.5
+    action: {fileID: 9174579719839809907}
+  - delay: 0.5
+    action: {fileID: 9174579719839809906}
+  isTrigger: 0
+  eventType: 0
+  tags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
