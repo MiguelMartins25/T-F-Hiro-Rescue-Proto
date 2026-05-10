@@ -1,3 +1,4 @@
+using OkapiKit;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -36,10 +37,11 @@ public class PlayerThomas : MonoBehaviour
     private bool            onGround;
     private bool            onCollision;
     private float           collisionTimer = 0.0f;
-    private float           puffingCooldown = 0.0f;
+    [SerializeField] private float puffingCooldown = 0.0f;
 
     public AudioSource source;
     public AudioClip puffing;
+    private bool isPuffing = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -106,15 +108,27 @@ public class PlayerThomas : MonoBehaviour
                 collisionTimer = 0.0f;
             }
         
-        if (speed != 0 && puffingCooldown == 0.2f)
+        if (speed != 0)
         {
-            InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
+            if (!isPuffing)
+            {
+                InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown); // every 1 second
+                isPuffing = true;
+            }
+        }
+        else
+        {
+            if (isPuffing)
+            {
+                CancelInvoke(nameof(PuffingSounds));
+                isPuffing = false;
+            }
         }
     }
 
     void PuffingSounds()
     {
-        source.PlayOneShot(puffing);
+        SoundManager.PlaySound(puffing);
     }
 
     void CollisionDetect()
