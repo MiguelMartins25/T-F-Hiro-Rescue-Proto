@@ -32,10 +32,13 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private LayerMask collisionLayer;
     //Time between bounce of collision
     [SerializeField] private float collisionCooldown;
+    //End the level detection
+    [SerializeField] private LayerMask levelEndTouch;
 
     private Rigidbody2D     rb;
     private bool            onGround;
     private bool            onCollision;
+    private bool            levelEnd;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
 
@@ -55,6 +58,7 @@ public class PlayerThomas : MonoBehaviour
     {
         GroundDetect();
         CollisionDetect();
+        LevelEnd();
 
         float dx = Input.GetAxis("Horizontal");
 
@@ -124,6 +128,11 @@ public class PlayerThomas : MonoBehaviour
                 isPuffing = false;
             }
         }
+
+        if (levelEnd == true)
+        {
+            speed = 0;
+        }
     }
 
     void PuffingSounds()
@@ -155,5 +164,14 @@ public class PlayerThomas : MonoBehaviour
             Gizmos.color = (onGround) ? (Color.black) : (Color.red);
             Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
         }
+    }
+
+    void LevelEnd()
+    {
+        levelEnd = false;
+
+        Collider2D end = Physics2D.OverlapCircle(playerPivot.position, collisionDetectionRadius, levelEndTouch);
+        if (end != null)
+            levelEnd = true;
     }
 }
