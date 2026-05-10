@@ -293554,9 +293554,9 @@ MonoBehaviour:
   speed: 0
   aceleration: 0
   maxSpeed: 250
-  maxAceleration: 0.5
-  acelerationDecrease: 0.1
-  frictionPower: 0.1
+  maxAceleration: 2
+  acelerationDecrease: 1
+  frictionPower: 1
   groundCheck: {fileID: 1377973852130035065}
   groundCheckRadius: 3
   groundLayer:
