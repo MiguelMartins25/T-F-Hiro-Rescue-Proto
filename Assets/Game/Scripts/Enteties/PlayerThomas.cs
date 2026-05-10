@@ -15,21 +15,21 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private float acelerationDecrease = 1;
     //How fast speed drecreases after reaching 0 aceleration
     [SerializeField] private float frictionPower = 2;
-
+    //Check ground collision
     [SerializeField] private Transform groundCheck;
-
+    //Radius of groundcheck
     [SerializeField] private float groundCheckRadius;
-
+    //Which layer check for ground check
     [SerializeField] private LayerMask groundLayer;
-
+    //Gracity applied to player while moving
     [SerializeField] private float movingGravity = 5;
-
+    //Area for player collision check
     [SerializeField] private Transform playerPivot;
-
+    //Radius of collison check
     [SerializeField] private float collisionDetectionRadius;
-
+    //Pivot of player collision area
     [SerializeField] private LayerMask collisionLayer;
-
+    //Time between bounce of collision
     [SerializeField] private float collisionCooldown;
 
     private Rigidbody2D     rb;
