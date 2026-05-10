@@ -9828,6 +9828,7 @@ GameObject:
   - component: {fileID: 414566927}
   - component: {fileID: 414566926}
   - component: {fileID: 414566925}
+  - component: {fileID: 414566930}
   m_Layer: 11
   m_Name: Sheep_2
   m_TagString: Untagged
@@ -10080,6 +10081,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &414566930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414566923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &419061361
 GameObject:
   m_ObjectHideFlags: 0
@@ -23159,6 +23177,97 @@ MonoBehaviour:
   changeValueHandler: {fileID: 0}
   changeVariable: {fileID: 0}
   scaleWithTime: 0
+--- !u!1 &579209753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579209754}
+  - component: {fileID: 579209755}
+  m_Layer: 0
+  m_Name: Whistle-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &579209754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579209753}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.800003, y: 29.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1176175467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &579209755
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579209753}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 7921617780660420459, guid: b14743ba5b6d06c41a43d3657f42012a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &582924672
 GameObject:
   m_ObjectHideFlags: 0
@@ -23398,6 +23507,7 @@ GameObject:
   - component: {fileID: 627899831}
   - component: {fileID: 627899834}
   - component: {fileID: 627899833}
+  - component: {fileID: 627899835}
   m_Layer: 0
   m_Name: StartEncounterTrigger
   m_TagString: Untagged
@@ -23483,7 +23593,8 @@ MonoBehaviour:
     Main Camera (UnityEngine.Camera)\n          enables object EncounterComponents\n         
     disables object Music\n          disables object ThomasHappy\n          enables
     object ThomasScared\n          disables object Thomas'sFaces\n          enables
-    object Thomas'sFacesScared\n"
+    object Thomas'sFacesScared\n          plays sound Spencer's Whistle at volume
+    1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 0
@@ -23510,6 +23621,8 @@ MonoBehaviour:
     action: {fileID: 627899834}
   - delay: 0
     action: {fileID: 627899833}
+  - delay: 0
+    action: {fileID: 627899835}
   isTrigger: 1
   eventType: 0
   tags:
@@ -23763,6 +23876,29 @@ MonoBehaviour:
   actionConditions: []
   target: {fileID: 718837985}
   state: 1
+--- !u!114 &627899835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627899820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766d16681200cf841a49e1df59f6076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
+  _showInfo: 1
+  _explanation: Plays sound Spencer's Whistle at volume 1 and at pitch 1
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  clip: {fileID: 8300000, guid: 355a30a29b341c042a2f2b906f05ddef, type: 3}
+  volume: {x: 1, y: 1}
+  pitch: {x: 1, y: 1}
 --- !u!1 &655657008
 GameObject:
   m_ObjectHideFlags: 0
@@ -23777,6 +23913,7 @@ GameObject:
   - component: {fileID: 655657012}
   - component: {fileID: 655657011}
   - component: {fileID: 655657010}
+  - component: {fileID: 655657015}
   m_Layer: 11
   m_Name: Sheep_5
   m_TagString: Untagged
@@ -24029,6 +24166,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &655657015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655657008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &681484235
 GameObject:
   m_ObjectHideFlags: 0
@@ -24474,6 +24628,7 @@ GameObject:
   - component: {fileID: 740008957}
   - component: {fileID: 740008956}
   - component: {fileID: 740008955}
+  - component: {fileID: 740008960}
   m_Layer: 11
   m_Name: Sheep_7
   m_TagString: Untagged
@@ -24531,7 +24686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
   _showInfo: 1
-  _explanation: "If (DistanceTo(Tag[Player]) <= 50) and when key space is pressed
+  _explanation: "If (DistanceTo(Tag[Player]) <= 75) and when key space is pressed
     (this can only happen every 1,5 seconds):\n          toggles object Sheep_7\n"
   description: 
   enableTrigger: 1
@@ -24726,6 +24881,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &740008960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740008953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &745777021
 GameObject:
   m_ObjectHideFlags: 0
@@ -25768,6 +25940,7 @@ GameObject:
   - component: {fileID: 851702597}
   - component: {fileID: 851702596}
   - component: {fileID: 851702595}
+  - component: {fileID: 851702600}
   m_Layer: 11
   m_Name: Sheep_6
   m_TagString: Untagged
@@ -26020,6 +26193,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &851702600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851702593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &860890313
 GameObject:
   m_ObjectHideFlags: 0
@@ -29473,6 +29663,97 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &874970564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874970565}
+  - component: {fileID: 874970566}
+  m_Layer: 0
+  m_Name: Whistle-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &874970565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874970564}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.800003, y: 29.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1176175467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &874970566
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874970564}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -268280967, guid: b14743ba5b6d06c41a43d3657f42012a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &882996219
 GameObject:
   m_ObjectHideFlags: 0
@@ -29562,6 +29843,7 @@ GameObject:
   - component: {fileID: 893484573}
   - component: {fileID: 893484572}
   - component: {fileID: 893484571}
+  - component: {fileID: 893484576}
   m_Layer: 11
   m_Name: Sheep_3
   m_TagString: Untagged
@@ -29814,6 +30096,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &893484576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893484569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &951284577
 GameObject:
   m_ObjectHideFlags: 0
@@ -35396,6 +35695,7 @@ GameObject:
   - component: {fileID: 1152653601}
   - component: {fileID: 1152653600}
   - component: {fileID: 1152653599}
+  - component: {fileID: 1152653604}
   m_Layer: 11
   m_Name: Sheep_4
   m_TagString: Untagged
@@ -35648,6 +35948,172 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1152653604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152653597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
+--- !u!1 &1176175466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176175467}
+  - component: {fileID: 1176175471}
+  - component: {fileID: 1176175470}
+  - component: {fileID: 1176175469}
+  - component: {fileID: 1176175468}
+  m_Layer: 0
+  m_Name: Whistle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1176175467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176175466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 579209754}
+  - {fileID: 874970565}
+  - {fileID: 1919994989}
+  m_Father: {fileID: 7654576803622752811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1176175468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176175466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
+  _showInfo: 1
+  _explanation: Toggles object Whistle-3
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 1919994988}
+  state: 2
+--- !u!114 &1176175469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176175466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
+  _showInfo: 1
+  _explanation: Toggles object Whistle-2
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 874970564}
+  state: 2
+--- !u!114 &1176175470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176175466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
+  _showInfo: 1
+  _explanation: Toggles object Whistle-1
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 579209753}
+  state: 2
+--- !u!114 &1176175471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176175466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac24d8e98e97620458dc0c6fbe26a958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
+  _showInfo: 1
+  _explanation: "When key Space is held (this can only happen every 1,5 seconds):\n         
+    toggles object Whistle-1\n then, at 0,2 seconds, \n          toggles object Whistle-1\n         
+    toggles object Whistle-2\n then, at 0,4 seconds, \n          toggles object Whistle-2\n         
+    toggles object Whistle-3\n then, at 0,6 seconds, \n          toggles object Whistle-3\n"
+  description: 
+  enableTrigger: 1
+  allowRetrigger: 1
+  hasPreconditions: 0
+  preConditions: []
+  actions:
+  - delay: 0
+    action: {fileID: 1176175470}
+  - delay: 0.2
+    action: {fileID: 1176175470}
+  - delay: 0.2
+    action: {fileID: 1176175469}
+  - delay: 0.4
+    action: {fileID: 1176175469}
+  - delay: 0.4
+    action: {fileID: 1176175468}
+  - delay: 0.6
+    action: {fileID: 1176175468}
+  inputType: 1
+  buttonName: 
+  key: 32
+  axis: 
+  deadArea: {x: -0.2, y: 0.2}
+  continuous: 1
+  negate: 0
+  useCooldown: 1
+  cooldown: 1.5
+  elseActions: []
 --- !u!1 &1235750823
 GameObject:
   m_ObjectHideFlags: 0
@@ -276552,6 +277018,7 @@ GameObject:
   - component: {fileID: 1304013090}
   - component: {fileID: 1304013100}
   - component: {fileID: 1304013101}
+  - component: {fileID: 1304013102}
   m_Layer: 0
   m_Name: EndHitbox
   m_TagString: Untagged
@@ -276657,7 +277124,7 @@ MonoBehaviour:
     enables component SpencerCamera (UnityEngine.Camera)\n          disables component
     EncounterCamera (UnityEngine.Camera)\n          disables object EncounterComponents\n         
     disables object SpencerCountdown\n          enables object EndTimer\n         
-    enables object Spencer'sTheme\n"
+    enables object Spencer'sTheme\n          enables object Spencer'sTheme\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -276674,6 +277141,8 @@ MonoBehaviour:
     action: {fileID: 1304013091}
   - delay: 0
     action: {fileID: 1304013090}
+  - delay: 0
+    action: {fileID: 1304013100}
   - delay: 0
     action: {fileID: 1304013100}
   isTrigger: 1
@@ -276841,6 +277310,28 @@ MonoBehaviour:
   actionConditions: []
   target: {fileID: 19559812}
   state: 0
+--- !u!114 &1304013102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304013088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
+  _showInfo: 1
+  _explanation: Disables component Player (PlayerThomas)
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 1596259908}
+  state: 1
 --- !u!1 &1372611683
 GameObject:
   m_ObjectHideFlags: 0
@@ -292952,17 +293443,18 @@ MonoBehaviour:
   acelerationDecrease: 0.1
   frictionPower: 0.1
   groundCheck: {fileID: 1377973852130035065}
-  groundCheckRadius: 2
+  groundCheckRadius: 3
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  movingGravity: 5
+  movingGravity: 7
   playerPivot: {fileID: 7654576803622752811}
   collisionDetectionRadius: 15
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2048
   collisionCooldown: 2
+  puffingCooldown: 0.7
   source: {fileID: 9174579719839809909}
   puffing: {fileID: 8300000, guid: f985a7b35a826d540842b4617e27ab82, type: 3}
 --- !u!1 &1597568941
@@ -293312,6 +293804,7 @@ GameObject:
   - component: {fileID: 1631494026}
   - component: {fileID: 1631494025}
   - component: {fileID: 1631494024}
+  - component: {fileID: 1631494029}
   m_Layer: 11
   m_Name: Sheep_9
   m_TagString: Untagged
@@ -293564,6 +294057,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1631494029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631494022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &1636625249
 GameObject:
   m_ObjectHideFlags: 0
@@ -293664,6 +294174,7 @@ GameObject:
   - component: {fileID: 1651311094}
   - component: {fileID: 1651311093}
   - component: {fileID: 1651311092}
+  - component: {fileID: 1651311097}
   m_Layer: 11
   m_Name: Sheep_1
   m_TagString: Untagged
@@ -293916,6 +294427,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1651311097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651311090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &1657651275
 GameObject:
   m_ObjectHideFlags: 0
@@ -294008,6 +294536,7 @@ GameObject:
   - component: {fileID: 1692357420}
   - component: {fileID: 1692357419}
   - component: {fileID: 1692357418}
+  - component: {fileID: 1692357423}
   m_Layer: 11
   m_Name: Sheep_10
   m_TagString: Untagged
@@ -294260,6 +294789,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1692357423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692357416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &1693671420
 GameObject:
   m_ObjectHideFlags: 0
@@ -295074,6 +295620,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1919994988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919994989}
+  - component: {fileID: 1919994990}
+  m_Layer: 0
+  m_Name: Whistle-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1919994989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919994988}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.800003, y: 29.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1176175467}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1919994990
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919994988}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -1744553148, guid: b14743ba5b6d06c41a43d3657f42012a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &1935692804
 GameObject:
   m_ObjectHideFlags: 0
@@ -295100,6 +295737,7 @@ GameObject:
   - component: {fileID: 1935692811}
   - component: {fileID: 1935692822}
   - component: {fileID: 1935692821}
+  - component: {fileID: 1935692823}
   m_Layer: 0
   m_Name: EndTimer
   m_TagString: Untagged
@@ -295451,16 +296089,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
-  _explanation: "Every 19 seconds, trigger the actions::\n          disables component
+  _explanation: "After 19 seconds, trigger the actions::\n          disables component
     SpencerCamera (UnityEngine.Camera)\n          enables component Main Camera (UnityEngine.Camera)\n         
     enables object CameraBoundingBox\n          disables object SpencerEncounterCameraBounds\n         
     enables object ThomasHappy\n          disables object ThomasScared\n         
     disables object KeepThomasInBush\n          enables object Music\n          disables
     object Thomas'sFacesScared\n          enables object Thomas'sFaces\n         
-    disables object SpencerEncounter\n"
+    enables component Player (PlayerThomas)\n          disables object SpencerEncounter\n"
   description: 
   enableTrigger: 1
-  allowRetrigger: 1
+  allowRetrigger: 0
   hasPreconditions: 0
   preConditions: []
   actions:
@@ -295484,6 +296122,8 @@ MonoBehaviour:
     action: {fileID: 1935692821}
   - delay: 0
     action: {fileID: 1935692822}
+  - delay: 0
+    action: {fileID: 1935692823}
   - delay: 0
     action: {fileID: 1935692811}
   startTriggered: 0
@@ -295533,6 +296173,28 @@ MonoBehaviour:
   hasConditions: 0
   actionConditions: []
   target: {fileID: 718837985}
+  state: 0
+--- !u!114 &1935692823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935692804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
+  _showInfo: 1
+  _explanation: Enables component Player (PlayerThomas)
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 1596259908}
   state: 0
 --- !u!1 &1965763899
 GameObject:
@@ -295794,6 +296456,7 @@ GameObject:
   - component: {fileID: 2134085133}
   - component: {fileID: 2134085132}
   - component: {fileID: 2134085131}
+  - component: {fileID: 2134085136}
   m_Layer: 11
   m_Name: Sheep_8
   m_TagString: Untagged
@@ -296046,6 +296709,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2134085136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134085129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fc8a1e9dd21634a9cb00402422ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.HypertaggedObject
+  _showInfo: 1
+  _explanation: 
+  description: 
+  hypertags:
+  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
 --- !u!1 &2139232747
 GameObject:
   m_ObjectHideFlags: 0
@@ -297662,6 +298342,7 @@ Transform:
   - {fileID: 549059794}
   - {fileID: 120348676}
   - {fileID: 1377973852130035065}
+  - {fileID: 1176175467}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8548545920508650047
