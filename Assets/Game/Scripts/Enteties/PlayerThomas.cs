@@ -6,15 +6,15 @@ public class PlayerThomas : MonoBehaviour
 {
     //Character speed
     [SerializeField] private float speed = 0;
-    //Aceleration added onto character speed
-    [SerializeField] private float aceleration = 0;
+    //Acceleration added onto character speed
+    [SerializeField] private float acceleration = 0;
     //Max character speed
     [SerializeField] private float maxSpeed = 150;
-      //Max character speed
-    [SerializeField] private float maxAceleration = 50;
+    //Max character acceleration
+    [SerializeField] private float maxAcceleration = 50;
     //Rate of acelaration lost after no inputs
-    [SerializeField] private float acelerationDecrease = 1;
-    //How fast speed drecreases after reaching 0 aceleration
+    [SerializeField] private float accelerationDecrease = 1;
+    //How fast speed drecreases after reaching 0 acceleration
     [SerializeField] private float frictionPower = 2;
     //Check ground collision
     [SerializeField] private Transform groundCheck;
@@ -41,6 +41,7 @@ public class PlayerThomas : MonoBehaviour
     private bool            levelEnd;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
+    private float           accelerationRate = 30.0f;
 
     //Place to put audio in
     public AudioClip puffing;
@@ -61,51 +62,11 @@ public class PlayerThomas : MonoBehaviour
         GroundDetect();
         CollisionDetect();
         LevelEnd();
+        FixedUpdate();
 
-        //player horizontal input
         float dx = Input.GetAxis("Horizontal");
 
-        //Calculations for player velocity
-        aceleration = aceleration + dx;
-
-        if (aceleration >= maxAceleration)
-            aceleration = maxAceleration;
-        else if (aceleration <= -maxAceleration)
-            aceleration = -maxAceleration;
-
-        speed = speed + aceleration;
-        if (speed >= maxSpeed)
-            speed = maxSpeed;
-        else if (speed <= -maxSpeed)
-            speed = -maxSpeed;
-
-        if (dx == 0)
-        {
-            if (aceleration > acelerationDecrease)
-                aceleration = aceleration - acelerationDecrease;
-            else if (aceleration < -acelerationDecrease)
-                aceleration = aceleration + acelerationDecrease;
-            else
-                if (aceleration < acelerationDecrease || aceleration > -acelerationDecrease)
-                    aceleration = 0;
-            
-            if (speed > frictionPower)
-                speed = speed - frictionPower;
-            else if (speed < -frictionPower)
-                speed = speed + frictionPower;
-            else
-                if (speed < frictionPower || speed > -frictionPower)
-                    speed = 0; 
-        }
-
-        //Makes the player speed decrease faster when input comes from oposite direction of movement
-        if ((dx > 0 && aceleration < 0) || (dx < 0 && aceleration > 0))
-            aceleration = 0;
-
-        //Vector of player movement
-        rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
-
-        //Makse the player charcater stop on slopes
+        //Makse the player character stop on slopes
         if (dx == 0 && onGround == true)
             rb.gravityScale = 0;
         else
@@ -191,5 +152,72 @@ public class PlayerThomas : MonoBehaviour
         Collider2D end = Physics2D.OverlapCircle(playerPivot.position, collisionDetectionRadius, levelEndTouch);
         if (end != null)
             levelEnd = true;
+    }
+
+    void FixedUpdate()
+    {
+        // Horizontal input
+        float dx = Input.GetAxis("Horizontal");
+
+        //Acceleration from input
+        acceleration += dx * accelerationRate * Time.fixedDeltaTime;
+
+        acceleration = Mathf.Clamp
+        (
+            acceleration,
+            -maxAcceleration,
+            maxAcceleration
+        );
+
+        // Apply acceleration to speed
+        speed += acceleration * Time.fixedDeltaTime;
+
+        speed = Mathf.Clamp(speed, -maxSpeed, maxSpeed);
+
+        // Slow down when no input
+        if (dx == 0)
+        {
+            // Reduce acceleration toward 0
+            if (acceleration > 0)
+            {
+                acceleration -= accelerationDecrease * Time.fixedDeltaTime;
+
+                if (acceleration < 0)
+                    acceleration = 0;
+            }
+            else if (acceleration < 0)
+            {
+                acceleration += accelerationDecrease * Time.fixedDeltaTime;
+
+                if (acceleration > 0)
+                    acceleration = 0;
+            }
+
+            // Apply friction to speed
+            if (speed > 0)
+            {
+                speed -= frictionPower * Time.fixedDeltaTime;
+
+                if (speed < 0)
+                    speed = 0;
+            }
+            else if (speed < 0)
+            {
+                speed += frictionPower * Time.fixedDeltaTime;
+
+                if (speed > 0)
+                    speed = 0;
+            }
+        }
+
+        // Reset acceleration if input is from opposite direction
+        if ((dx > 0 && acceleration < 0) ||
+            (dx < 0 && acceleration > 0))
+        {
+            acceleration = 0;
+        }
+
+        // Apply movement
+        rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
     }
 }
