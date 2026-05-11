@@ -62,7 +62,6 @@ public class PlayerThomas : MonoBehaviour
         GroundDetect();
         CollisionDetect();
         LevelEnd();
-        FixedUpdate();
 
         float dx = Input.GetAxis("Horizontal");
 
