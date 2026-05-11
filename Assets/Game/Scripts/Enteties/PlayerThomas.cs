@@ -41,7 +41,7 @@ public class PlayerThomas : MonoBehaviour
     private bool            levelEnd;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
-    private float           accelerationRate = 30.0f;
+    [SerializeField] private float accelerationRate = 20.0f;
 
     //Place to put audio in
     public AudioClip puffing;
@@ -161,12 +161,7 @@ public class PlayerThomas : MonoBehaviour
         //Acceleration from input
         acceleration += dx * accelerationRate * Time.fixedDeltaTime;
 
-        acceleration = Mathf.Clamp
-        (
-            acceleration,
-            -maxAcceleration,
-            maxAcceleration
-        );
+        acceleration = Mathf.Clamp(acceleration, -maxAcceleration, maxAcceleration);
 
         // Apply acceleration to speed
         speed += acceleration * Time.fixedDeltaTime;
@@ -210,8 +205,7 @@ public class PlayerThomas : MonoBehaviour
         }
 
         // Reset acceleration if input is from opposite direction
-        if ((dx > 0 && acceleration < 0) ||
-            (dx < 0 && acceleration > 0))
+        if ((dx > 0 && acceleration < 0) || (dx < 0 && acceleration > 0))
         {
             acceleration = 0;
         }

@@ -293553,10 +293553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerThomas
   speed: 0
   acceleration: 0
-  maxSpeed: 300
-  maxAcceleration: 25
-  accelerationDecrease: 5
-  frictionPower: 8
+  maxSpeed: 250
+  maxAcceleration: 500
+  accelerationDecrease: 200
+  frictionPower: 500
   groundCheck: {fileID: 1377973852130035065}
   groundCheckRadius: 3
   groundLayer:
@@ -293573,6 +293573,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   puffingCooldown: 0.7
+  accelerationRate: 600
   puffing: {fileID: 8300000, guid: f985a7b35a826d540842b4617e27ab82, type: 3}
 --- !u!1 &1597568941
 GameObject:
