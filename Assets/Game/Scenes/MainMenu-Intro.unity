@@ -838,9 +838,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
-  m_AssetsPPU: 100
-  m_RefResolutionX: 480
-  m_RefResolutionY: 270
+  m_AssetsPPU: 400
+  m_RefResolutionX: 1920
+  m_RefResolutionY: 1080
   m_CropFrame: 0
   m_GridSnapping: 0
   m_FilterMode: 0
@@ -1127,7 +1127,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1297665070239915762, guid: e00f4e03234f87343b4868bc0570c822, type: 3}
+  m_Sprite: {fileID: 1297665070239915762, guid: 92deb47b5843fdb48a7fc0770a4c8a01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2336,14 +2336,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene Level 1
+  _explanation: Switches to scene LoadingScreen
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: Level 1
+  sceneName: LoadingScreen
 --- !u!114 &906936694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
   _explanation: "Every 5 seconds, trigger the actions::\n          switches to scene
-    Level 1\n"
+    LoadingScreen\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -3696,7 +3696,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8124337219667935481, guid: 790ceb37721462b4791d64d0b8c88f81, type: 3}
+  m_Sprite: {fileID: -7615933532866380528, guid: c8fd12bbac6425d458b002540868297c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3868,7 +3868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551048337
 Transform:
   m_ObjectHideFlags: 0

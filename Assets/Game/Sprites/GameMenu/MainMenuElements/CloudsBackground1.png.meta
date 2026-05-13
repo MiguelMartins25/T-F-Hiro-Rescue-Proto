@@ -44,9 +44,6 @@ TextureImporter:
   - first:
       213: -5389235656866776816
     second: CloudsBackground1_13
-  - first:
-      213: -5776095326363164720
-    second: CloudsBackground1_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -180,7 +177,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f550ea2d5f5711a4ea15343d46943b15
+    spriteID: 21c88c1f5a7238e479f1205a63e5c47a
     internalID: 0
     vertices: []
     indices: 
