@@ -60,7 +60,24 @@ public class PlayerThomas : MonoBehaviour
     {
         //Called Methods
         //GroundDetect();
-        //CollisionDetect();
+        CollisionDetect();
+
+        // Horizontal input
+        float dx = Input.GetAxis("Horizontal");
+
+        collisionTimer += Time.deltaTime;
+        if ((speed > 0 && onCollision == true) || (speed < 0 && onCollision == true))
+            if (collisionTimer > collisionCooldown)
+            {
+                speed = -speed/2;
+                collisionTimer = 0.0f;
+            }
+
+        //Makse the player character stop on slopes
+        if (dx == 0 && onGround == true)
+            rb.gravityScale = 0;
+        else
+            rb.gravityScale = movingGravity;
     }
 
     //puffing sound player
@@ -84,8 +101,8 @@ public class PlayerThomas : MonoBehaviour
     {
         onGround = false;
 
-        //Collider2D collider = Physics2D.OverlapBox(groundCheck.position, groundCheckRadius, 0.0f, groundLayer);
-        if (GetComponent<Collider>() != null)
+        Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (collider != null)
             onGround = true;
     }
 
@@ -95,7 +112,7 @@ public class PlayerThomas : MonoBehaviour
         if (groundCheck)
         {
             Gizmos.color = (onGround) ? (Color.black) : (Color.red);
-            //Gizmos.DrawCube(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
         }
     }
 
@@ -163,21 +180,6 @@ public class PlayerThomas : MonoBehaviour
 
         // Apply movement
         rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
-
-                //Makse the player character stop on slopes
-        if (dx == 0 && onGround == true)
-            rb.gravityScale = 0;
-        else
-            rb.gravityScale = movingGravity;
-        
-        //Makes the player bounce when colliding with an object of the collision layer
-        collisionTimer += Time.deltaTime;
-        if ((speed > 0 && onCollision == true) || (speed < 0 && onCollision == true))
-            if (collisionTimer > collisionCooldown)
-            {
-                speed = -speed/2;
-                collisionTimer = 0.0f;
-            }
         
         //Makes the puff sound when the player is moving
         if (speed != 0)
@@ -199,4 +201,5 @@ public class PlayerThomas : MonoBehaviour
             }
         }
     }
+
 }
