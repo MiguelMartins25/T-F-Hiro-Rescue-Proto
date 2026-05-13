@@ -59,52 +59,8 @@ public class PlayerThomas : MonoBehaviour
     void Update()
     {
         //Called Methods
-        GroundDetect();
-        CollisionDetect();
-        LevelEnd();
-
-        float dx = Input.GetAxis("Horizontal");
-
-        //Makse the player character stop on slopes
-        if (dx == 0 && onGround == true)
-            rb.gravityScale = 0;
-        else
-            rb.gravityScale = movingGravity;
-        
-        //Makes the player bounce when colliding with an object of the collision layer
-        collisionTimer += Time.deltaTime;
-        if ((speed > 0 && onCollision == true) || (speed < 0 && onCollision == true))
-            if (collisionTimer > collisionCooldown)
-            {
-                speed = -speed/2;
-                collisionTimer = 0.0f;
-            }
-        
-        //Makes the puff sound when the player is moving
-        if (speed != 0)
-        {
-            if (!isPuffing)
-            {
-                //Invokes the method at an interval
-                InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
-                isPuffing = true;
-            }
-        }
-        else
-        {
-            if (isPuffing)
-            {
-                //Cancels the invokation
-                CancelInvoke(nameof(PuffingSounds));
-                isPuffing = false;
-            }
-        }
-
-        //makes the player unable to move at the end of the level
-        if (levelEnd == true)
-        {
-            speed = 0;
-        }
+        //GroundDetect();
+        //CollisionDetect();
     }
 
     //puffing sound player
@@ -128,8 +84,8 @@ public class PlayerThomas : MonoBehaviour
     {
         onGround = false;
 
-        Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        if (collider != null)
+        //Collider2D collider = Physics2D.OverlapBox(groundCheck.position, groundCheckRadius, 0.0f, groundLayer);
+        if (GetComponent<Collider>() != null)
             onGround = true;
     }
 
@@ -139,18 +95,8 @@ public class PlayerThomas : MonoBehaviour
         if (groundCheck)
         {
             Gizmos.color = (onGround) ? (Color.black) : (Color.red);
-            Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
+            //Gizmos.DrawCube(groundCheck.position, groundCheckRadius);
         }
-    }
-
-    //tells the scrpt that the level has ended
-    void LevelEnd()
-    {
-        levelEnd = false;
-
-        Collider2D end = Physics2D.OverlapCircle(playerPivot.position, collisionDetectionRadius, levelEndTouch);
-        if (end != null)
-            levelEnd = true;
     }
 
     void FixedUpdate()
@@ -210,7 +156,47 @@ public class PlayerThomas : MonoBehaviour
             acceleration = 0;
         }
 
+        if ((dx > 0 && speed < 0) || (dx < 0 && speed > 0))
+        {
+            acceleration = acceleration * 2;
+        }
+
         // Apply movement
         rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
+
+                //Makse the player character stop on slopes
+        if (dx == 0 && onGround == true)
+            rb.gravityScale = 0;
+        else
+            rb.gravityScale = movingGravity;
+        
+        //Makes the player bounce when colliding with an object of the collision layer
+        collisionTimer += Time.deltaTime;
+        if ((speed > 0 && onCollision == true) || (speed < 0 && onCollision == true))
+            if (collisionTimer > collisionCooldown)
+            {
+                speed = -speed/2;
+                collisionTimer = 0.0f;
+            }
+        
+        //Makes the puff sound when the player is moving
+        if (speed != 0)
+        {
+            if (!isPuffing)
+            {
+                //Invokes the method at an interval
+                InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
+                isPuffing = true;
+            }
+        }
+        else
+        {
+            if (isPuffing)
+            {
+                //Cancels the invokation
+                CancelInvoke(nameof(PuffingSounds));
+                isPuffing = false;
+            }
+        }
     }
 }
