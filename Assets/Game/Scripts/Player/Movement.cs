@@ -8,16 +8,35 @@ public class Movement : MonoBehaviour
     public float speed = 8f;
 
     [SerializeField] private Rigidbody2D rb;
-
     [SerializeField] private Transform frontWheel;
     [SerializeField] private Transform rearWheel;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] public SpriteRenderer spriteRenderer;
+    [SerializeField] public Animator animator;
 
     public float rayLength = 2f;
 
     private void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (horizontal != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+        if (horizontal < 0)
+        {
+            animator.SetBool("isReverse", true);
+        }
+        else
+        {
+            animator.SetBool("isReverse", false);
+        }
     }
 
     private void FixedUpdate()
@@ -35,9 +54,6 @@ public class Movement : MonoBehaviour
             rayLength,
             groundLayer
         );
-
-        Debug.DrawRay(frontWheel.position, Vector2.down * rayLength, Color.red);
-        Debug.DrawRay(rearWheel.position, Vector2.down * rayLength, Color.blue);
 
         if (frontHit && rearHit)
         {
