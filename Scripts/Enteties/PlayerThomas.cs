@@ -12,21 +12,21 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private float maxSpeed = 150;
     //Max character acceleration
     [SerializeField] private float maxAcceleration = 50;
-    //Rate of acceleration lost after no inputs
+    //Rate of acelaration lost after no inputs
     [SerializeField] private float accelerationDecrease = 1;
-    //How fast speed decreases after reaching 0 acceleration
+    //How fast speed drecreases after reaching 0 acceleration
     [SerializeField] private float frictionPower = 2;
     //Check ground collision
     [SerializeField] private Transform groundCheck;
-    //Radius of ground check
+    //Radius of groundcheck
     [SerializeField] private float groundCheckRadius;
     //Which layer check for ground check
     [SerializeField] private LayerMask groundLayer;
-    //Gravity applied to player while moving
+    //Gracity applied to player while moving
     [SerializeField] private float movingGravity = 5;
     //Area for player collision check
     [SerializeField] private Transform playerPivot;
-    //Radius of collision check
+    //Radius of collison check
     [SerializeField] private float collisionDetectionRadius;
     //Pivot of player collision area
     [SerializeField] private LayerMask collisionLayer;
@@ -59,19 +59,12 @@ public class PlayerThomas : MonoBehaviour
     void Update()
     {
         //Called Methods
-        GroundDetect();
+        //GroundDetect();
         CollisionDetect();
-        LevelEnd();
 
+        // Horizontal input
         float dx = Input.GetAxis("Horizontal");
 
-        //Makse the player character stop on slopes
-        if (dx == 0 && onGround == true)
-            rb.gravityScale = 0;
-        else
-            rb.gravityScale = movingGravity;
-        
-        //Makes the player bounce when colliding with an object of the collision layer
         collisionTimer += Time.deltaTime;
         if ((speed > 0 && onCollision == true) || (speed < 0 && onCollision == true))
             if (collisionTimer > collisionCooldown)
@@ -79,32 +72,12 @@ public class PlayerThomas : MonoBehaviour
                 speed = -speed/2;
                 collisionTimer = 0.0f;
             }
-        
-        //Makes the puff sound when the player is moving
-        if (speed != 0)
-        {
-            if (!isPuffing)
-            {
-                //Invokes the method at an interval
-                InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
-                isPuffing = true;
-            }
-        }
-        else
-        {
-            if (isPuffing)
-            {
-                //Cancels the invokation
-                CancelInvoke(nameof(PuffingSounds));
-                isPuffing = false;
-            }
-        }
 
-        //makes the player unable to move at the end of the level
-        if (levelEnd == true)
-        {
-            speed = 0;
-        }
+        //Makse the player character stop on slopes
+        if (dx == 0 && onGround == true)
+            rb.gravityScale = 0;
+        else
+            rb.gravityScale = movingGravity;
     }
 
     //puffing sound player
@@ -141,16 +114,6 @@ public class PlayerThomas : MonoBehaviour
             Gizmos.color = (onGround) ? (Color.black) : (Color.red);
             Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
         }
-    }
-
-    //tells the scrpt that the level has ended
-    void LevelEnd()
-    {
-        levelEnd = false;
-
-        Collider2D end = Physics2D.OverlapCircle(playerPivot.position, collisionDetectionRadius, levelEndTouch);
-        if (end != null)
-            levelEnd = true;
     }
 
     void FixedUpdate()
@@ -210,7 +173,33 @@ public class PlayerThomas : MonoBehaviour
             acceleration = 0;
         }
 
+        if ((dx > 0 && speed < 0) || (dx < 0 && speed > 0))
+        {
+            acceleration = acceleration * 2;
+        }
+
         // Apply movement
         rb.linearVelocity = new Vector2(speed, rb.linearVelocityY);
+        
+        //Makes the puff sound when the player is moving
+        if (speed != 0)
+        {
+            if (!isPuffing)
+            {
+                //Invokes the method at an interval
+                InvokeRepeating(nameof(PuffingSounds), 0f, puffingCooldown);
+                isPuffing = true;
+            }
+        }
+        else
+        {
+            if (isPuffing)
+            {
+                //Cancels the invokation
+                CancelInvoke(nameof(PuffingSounds));
+                isPuffing = false;
+            }
+        }
     }
+
 }
