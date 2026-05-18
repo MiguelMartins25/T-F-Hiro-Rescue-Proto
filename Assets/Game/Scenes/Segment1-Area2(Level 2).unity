@@ -8490,54 +8490,6 @@ MonoBehaviour:
   description: 
   hypertags:
   - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
---- !u!1 &219993137
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 219993139}
-  - component: {fileID: 219993138}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &219993138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219993137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2693f9c8caf81046837996718175889, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.SoundManager
-  _showInfo: 1
-  _explanation: This system is responsible for playing all sounds in the game
-  description: 
-  defaultMixerOutput: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
---- !u!4 &219993139
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219993137}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222246398
 GameObject:
   m_ObjectHideFlags: 0
@@ -19455,7 +19407,7 @@ GameObject:
   - component: {fileID: 568957881}
   - component: {fileID: 568957880}
   m_Layer: 0
-  m_Name: Music
+  m_Name: AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19470,7 +19422,7 @@ AudioSource:
   m_GameObject: {fileID: 568957879}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 22909fce54da7dd4e873cb1ad72d72db, type: 3}
   m_PlayOnAwake: 1
@@ -23123,7 +23075,7 @@ Transform:
   m_GameObject: {fileID: 584779611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 64, z: 0}
+  m_LocalPosition: {x: -3.1, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -297183,42 +297135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &697958956042080459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457698477028657275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b66a51b7fe64c4390ac471b7df316b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnCollision
-  _showInfo: 1
-  _explanation: "When a collision with a trigger with tags [Player] starts:\n         
-    disables object Music\n          plays sound Thomas the Tank Engine - HQ END
-    Theme Tune 1984 at volume 0,75 and at pitch 1\n then, at 8 seconds, \n         
-    enables object Winning Smile\n then, at 10,5 seconds, \n          switches to
-    scene MainMenu-Intro\n"
-  description: 
-  enableTrigger: 0
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 8938216309706076078}
-  - delay: 0
-    action: {fileID: 4262447783391584727}
-  - delay: 8
-    action: {fileID: 8938216309706076079}
-  - delay: 10.5
-    action: {fileID: 5060313415356643354}
-  isTrigger: 1
-  eventType: 0
-  tags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
 --- !u!114 &707287968997914194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298037,30 +297953,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6, y: 11}
   m_EdgeRadius: 0
---- !u!114 &4262447783391584727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457698477028657275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766d16681200cf841a49e1df59f6076f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
-  _showInfo: 1
-  _explanation: Plays sound Thomas the Tank Engine - HQ END Theme Tune 1984 at volume
-    0,75 and at pitch 1
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  clip: {fileID: 8300000, guid: 68c7b22d52af5344fb33f50e7b844a9c, type: 3}
-  volume: {x: 0.75, y: 0.75}
-  pitch: {x: 1, y: 1}
 --- !u!114 &4399602143152883058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298101,27 +297993,6 @@ MonoBehaviour:
   description: 
   hypertags:
   - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
---- !u!114 &5060313415356643354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457698477028657275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b12253cfd341aa46a3a6fcba7709af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
-  _showInfo: 1
-  _explanation: Switches to scene MainMenu-Intro
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  sceneName: MainMenu-Intro
 --- !u!50 &5067307915531839031
 Rigidbody2D:
   serializedVersion: 5
@@ -298508,11 +298379,6 @@ GameObject:
   - component: {fileID: 8938216309706076080}
   - component: {fileID: 889792695473576241}
   - component: {fileID: 3810822907149326695}
-  - component: {fileID: 697958956042080459}
-  - component: {fileID: 4262447783391584727}
-  - component: {fileID: 5060313415356643354}
-  - component: {fileID: 8938216309706076078}
-  - component: {fileID: 8938216309706076079}
   m_Layer: 7
   m_Name: Exit
   m_TagString: Untagged
@@ -298551,7 +298417,7 @@ Transform:
   m_GameObject: {fileID: 8988164317965227067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3395, y: -1568, z: 0}
+  m_LocalPosition: {x: 5690, y: -1777, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -298761,50 +298627,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &8938216309706076078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457698477028657275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object Music
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 568957879}
-  state: 1
---- !u!114 &8938216309706076079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457698477028657275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object Winning Smile
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1808045610}
-  state: 0
 --- !u!114 &8938216309706076080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298817,8 +298639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e437f8b2eaed3ce449952612d8b4289a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelEnd
-  endTime: 0
-  timePassed: 0
+  endTime: 10.5
+  sceneChange: MainMenu-Intro
+  endTheme: {fileID: 8300000, guid: 68c7b22d52af5344fb33f50e7b844a9c, type: 3}
 --- !u!1 &8988164317965227067
 GameObject:
   m_ObjectHideFlags: 0
@@ -299162,7 +298985,6 @@ SceneRoots:
   - {fileID: 1657651277}
   - {fileID: 1832671717}
   - {fileID: 784092448}
-  - {fileID: 219993139}
   - {fileID: 797987601946560570}
   - {fileID: 7654576803622752811}
   - {fileID: 817571927}
