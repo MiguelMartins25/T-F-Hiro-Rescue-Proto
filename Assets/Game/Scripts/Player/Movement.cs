@@ -3,11 +3,11 @@ using UnityEngine.Animations;
 
 public class Movement : MonoBehaviour
 {
-    private float horizontal;
+    public float horizontal;
 
     public float speed = 8f;
 
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform frontWheel;
     [SerializeField] private Transform rearWheel;
     [SerializeField] private LayerMask groundLayer;
@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (horizontal != 0)
+        if (horizontal > 0)
         {
             animator.SetBool("isWalking", true);
         }
@@ -37,6 +37,10 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("isReverse", false);
         }
+
+            Debug.Log("Walk - " + animator.GetBool("isWalking"));
+            Debug.Log("Reverse - " + animator.GetBool("isReverse"));
+            Debug.Log(horizontal);
     }
 
     private void FixedUpdate()
@@ -76,8 +80,6 @@ public class Movement : MonoBehaviour
                 Quaternion.Euler(0, 0, angle),
                 10f * Time.fixedDeltaTime
                 );
-
-            Debug.Log(angle);
         }
     }
 }
