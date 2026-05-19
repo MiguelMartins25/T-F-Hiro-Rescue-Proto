@@ -41,7 +41,7 @@ public class PlayerThomas : MonoBehaviour
     private bool            levelEnd;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
-    [SerializeField] private float accelerationRate = 20.0f;
+    [SerializeField] private float accelerationRate = 60.0f;
 
     //Place to put audio in
     public AudioClip puffing;
@@ -122,7 +122,7 @@ public class PlayerThomas : MonoBehaviour
         float dx = Input.GetAxis("Horizontal");
 
         //Acceleration from input
-        acceleration += dx * accelerationRate * Time.fixedDeltaTime;
+        acceleration += (dx * 5) * accelerationRate * Time.fixedDeltaTime;
 
         acceleration = Mathf.Clamp(acceleration, -maxAcceleration, maxAcceleration);
 
