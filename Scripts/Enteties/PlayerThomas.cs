@@ -44,7 +44,7 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private float accelerationRate = 20.0f;
 
     //Place to put audio in
-    public AudioClip puffing;
+    private AudioClip puffing;
     //Bool to known when player is moving
     private bool isPuffing = false;
 
