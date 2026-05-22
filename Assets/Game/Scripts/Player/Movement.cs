@@ -3,23 +3,36 @@ using UnityEngine.Animations;
 
 public class Movement : MonoBehaviour
 {
+    // Basically the direction value;
     public float horizontal;
 
-    public float speed = 8f;
+    public float speed = 50f;
 
+    // Forces
     [SerializeField] public Rigidbody2D rb;
+    [SerializeField] public float acceleration;
+    [SerializeField] public float maxSpeed;
+    [SerializeField] public float friction;
+
+    // Detectors
     [SerializeField] private Transform frontWheel;
     [SerializeField] private Transform rearWheel;
     [SerializeField] private LayerMask groundLayer;
+
+    // Sprite-related
     [SerializeField] public SpriteRenderer spriteRenderer;
     [SerializeField] public Animator animator;
 
-    public float rayLength = 2f;
+    // How far the ground detectors can trigger
+    public float rayLength = 500f;
 
+    // Updates every frame
     private void Update()
     {
+        // Gets the direction the player is pressing
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        // These depend on "ThomasAnim" Animator's bools!
         if (horizontal > 0)
         {
             animator.SetBool("isWalking", true);
@@ -37,14 +50,13 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("isReverse", false);
         }
-
-            Debug.Log("Walk - " + animator.GetBool("isWalking"));
-            Debug.Log("Reverse - " + animator.GetBool("isReverse"));
-            Debug.Log(horizontal);
     }
 
+    // Updates every frame but physics-flavored
+    // Only physics related code can be here! VVV
     private void FixedUpdate()
     {
+        // Front wheel ground detector
         RaycastHit2D frontHit = Physics2D.Raycast(
             frontWheel.position,
             Vector2.down,
@@ -52,6 +64,7 @@ public class Movement : MonoBehaviour
             groundLayer
         );
 
+        // Back wheel ground detector
         RaycastHit2D rearHit = Physics2D.Raycast(
             rearWheel.position,
             Vector2.down,
@@ -59,26 +72,66 @@ public class Movement : MonoBehaviour
             groundLayer
         );
 
+        // Basically saying - "If grounded"
         if (frontHit && rearHit)
         {
+            // Forward
+            if (horizontal > 0)
+            {
+                if (speed < 0){
+                    // To be more forgiving and not feel terrible to try and control;
+                    // This is a Thomas the Tank Engine game, for God's sake! Lil' Timmy
+                    // would break into tears with how many times Thomas was crashing into things
+                    // during testing!
+                    speed += acceleration * 3 * Time.fixedDeltaTime;}
+
+                else {speed += acceleration * Time.fixedDeltaTime;}
+            }
+
+            // Back
+            if (horizontal < 0)
+            {
+                if (speed > 0){
+                    // Same as the above, but for braking
+                    speed -= acceleration * 3 * Time.fixedDeltaTime;}
+
+                else {speed -= acceleration * Time.fixedDeltaTime;}
+            }
+            
+            // Idle, N/A
+            if (horizontal == 0)
+            {
+                // Thomas slides after letting go of a direction until speed hits 0;
+                // affected by the friction value
+                speed = Mathf.MoveTowards(
+                    speed,
+                    0,
+                    friction * Time.fixedDeltaTime
+                );
+            }
+
+            // Even the rails have speed limits, and Thomas doesn't want to pay
+            // for speeding tickets
+            speed = Mathf.Clamp(speed, -maxSpeed, maxSpeed); // Limits speed value
+
             // Angle from rear wheel to front wheel
             Vector2 slopeDirection =
                 (frontHit.point - rearHit.point).normalized;
 
-            // Move along slope
-            rb.linearVelocity = slopeDirection * horizontal * speed;
+            // Applies speed; mindful of where the player is standing
+            rb.linearVelocity = slopeDirection * speed;
 
-                // Rotate train
             float angle = Mathf.Atan2(
                 slopeDirection.y,
                 slopeDirection.x
                 ) * Mathf.Rad2Deg;
             
+            // Rotates sprite
             transform.rotation =
                 Quaternion.Lerp(
                 transform.rotation,
                 Quaternion.Euler(0, 0, angle),
-                10f * Time.fixedDeltaTime
+                10f * Time.fixedDeltaTime // Smooth!
                 );
         }
     }
