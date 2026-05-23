@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DisableWhistle : MonoBehaviour
 {
+    [SerializeField] private GameObject whistleRails;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,33 +15,19 @@ public class DisableWhistle : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(!other.CompareTag("Player"))
-          return;
-
         WhistleTracks controller =
-            other.GetComponent<WhistleTracks>();
-
-        if (controller != null)
-        {
-            controller.DisableWhistle(true);
-            Debug.Log("Rail changing disabled");
-        }
+            whistleRails.GetComponent<WhistleTracks>();
+        controller.DisableWhistle(true);
+        Debug.Log("Rail changing disabled");
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.CompareTag("Player"))
-            return;
-
         WhistleTracks controller =
-            other.GetComponent<WhistleTracks>();
-
-        if (controller != null)
-        {
-            controller.DisableWhistle(false);
-            Debug.Log("Rail changing enabled");
-        }
+            whistleRails.GetComponent<WhistleTracks>();
+        controller.DisableWhistle(false);
+        Debug.Log("Rail changing disabled");
     }
 }

@@ -6,16 +6,13 @@ public class WhistleTracks : MonoBehaviour
 {
     private GameObject railsUp;
     private GameObject railsDown;
-    private GameObject disabledArea;
-    private GameObject forceUp;
-    private GameObject forceDown;
     private float cooldownTimer = 0.0f;
     [SerializeField] private float railChangeCooldown = 1.5f;
     private bool space = false;
     private bool railState = false;
     private bool disable = false;
-    private bool forceRailsUp = false;
     private bool forceRailsDown = false;
+    private bool forceRailsUp = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,21 +27,7 @@ public class WhistleTracks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void FixedUpdate()
-    {
         space = Input.GetKeyDown("space");
-
-        if (space == true)
-        {
-            Debug.Log("it works");
-            Debug.Log(cooldownTimer);
-        }
-
-        if (cooldownTimer < railChangeCooldown)
-            cooldownTimer = cooldownTimer + Time.fixedDeltaTime;
 
         if (space == true && railState == false && disable == false)
         {
@@ -66,25 +49,42 @@ public class WhistleTracks : MonoBehaviour
                 cooldownTimer = 0.0f;
                 railState = false;
             }
-        }       
+        }   
+    }
+
+    void FixedUpdate()
+    {
+
+        if (cooldownTimer < railChangeCooldown)
+            cooldownTimer = cooldownTimer + Time.fixedDeltaTime;
+    
     }
     
     public void DisableWhistle(bool allow)
     {
-        disable = !allow;
+        disable = allow;
     }
 
     public void ForceRailsUp(bool allow)
     {
-        disable = !allow;
-        railsUp.gameObject.SetActive(true);
-        railsDown.gameObject.SetActive(false);
+        forceRailsDown = allow;
+        if (forceRailsDown == true)
+        {
+            railsUp.gameObject.SetActive(true);
+            railsDown.gameObject.SetActive(false);
+            forceRailsDown = false;
+        }
     }
 
     public void ForceRailsDown(bool allow)
     {
-        disable = !allow;
-        railsUp.gameObject.SetActive(false);
-        railsDown.gameObject.SetActive(true);
+        forceRailsUp = allow;
+        if (forceRailsUp == true)
+        {
+            railsUp.gameObject.SetActive(false);
+            railsDown.gameObject.SetActive(true);
+            forceRailsUp = false;
+            Debug.Log("Works");
+        }
     }
 }
