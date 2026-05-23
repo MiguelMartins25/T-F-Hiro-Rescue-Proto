@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LevelEnd : MonoBehaviour
+public class LevelEndT : MonoBehaviour
 {
     [SerializeField] private float endTime;
     [SerializeField] private string sceneChange;

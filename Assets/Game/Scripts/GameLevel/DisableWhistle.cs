@@ -17,17 +17,13 @@ public class DisableWhistle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        WhistleTracks controller =
-            whistleRails.GetComponent<WhistleTracks>();
-        controller.DisableWhistle(true);
-        Debug.Log("Rail changing disabled");
+        WhistleTracks controller = whistleRails.GetComponent<WhistleTracks>();
+        controller.DisableTrackChange(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        WhistleTracks controller =
-            whistleRails.GetComponent<WhistleTracks>();
-        controller.DisableWhistle(false);
-        Debug.Log("Rail changing disabled");
+        WhistleTracks controller = whistleRails.GetComponent<WhistleTracks>();
+        controller.DisableTrackChange(false);
     }
 }

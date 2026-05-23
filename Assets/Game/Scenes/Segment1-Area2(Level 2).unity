@@ -10278,7 +10278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f74af70e6b112f48a3fc099f9261c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WhistleTracks
-  railChangeCooldown: 1.5
 --- !u!1 &429482419
 GameObject:
   m_ObjectHideFlags: 0
@@ -75245,9 +75244,8 @@ GameObject:
   m_Component:
   - component: {fileID: 568957881}
   - component: {fileID: 568957880}
-  - component: {fileID: 568957882}
   m_Layer: 0
-  m_Name: AudioSource
+  m_Name: LevelMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75365,22 +75363,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &568957882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568957879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2693f9c8caf81046837996718175889, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.SoundManager
-  _showInfo: 1
-  _explanation: This system is responsible for playing all sounds in the game
-  description: 
-  defaultMixerOutput: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
 --- !u!1 &569522642
 GameObject:
   m_ObjectHideFlags: 0
@@ -76077,10 +76059,10 @@ MonoBehaviour:
     disables object CameraBoundingBox\n          enables object SpencerEncounterCameraBounds\n         
     enables component EncounterCamera (UnityEngine.Camera)\n          disables component
     Main Camera (UnityEngine.Camera)\n          enables object EncounterComponents\n         
-    disables object Music\n          disables object ThomasHappy\n          enables
-    object ThomasScared\n          disables object Thomas'sFaces\n          enables
-    object Thomas'sFacesScared\n          plays sound Spencer's Whistle at volume
-    1 and at pitch 1\n"
+    disables object LevelMusic\n          disables object ThomasHappy\n         
+    enables object ThomasScared\n          disables object Thomas'sFaces\n         
+    enables object Thomas'sFacesScared\n          plays sound Spencer's Whistle at
+    volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 0
@@ -76265,7 +76247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
   _showInfo: 1
-  _explanation: Disables object Music
+  _explanation: Disables object LevelMusic
   description: 
   enableAction: 1
   hasTags: 0
@@ -259131,6 +259113,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317754041}
   m_CullTransparentMesh: 1
+--- !u!1 &1318574977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1318574979}
+  - component: {fileID: 1318574978}
+  m_Layer: 0
+  m_Name: OkapiSoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1318574978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318574977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2693f9c8caf81046837996718175889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.SoundManager
+  _showInfo: 1
+  _explanation: This system is responsible for playing all sounds in the game
+  description: 
+  defaultMixerOutput: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
+--- !u!4 &1318574979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318574977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1959.1587, y: -41.01654, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320099571
 GameObject:
   m_ObjectHideFlags: 0
@@ -276843,62 +276873,6 @@ MonoBehaviour:
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
   timeInterval: {x: 3, y: 3}
---- !u!114 &1596259864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164317965227067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766d16681200cf841a49e1df59f6076f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionPlaySound
-  _showInfo: 1
-  _explanation: Plays sound Thomas's Whistle at volume 1 and at pitch 1
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  clip: {fileID: 8300000, guid: 0c79a7c988cc6194e9c1b3e24b1bca9e, type: 3}
-  volume: {x: 1, y: 1}
-  pitch: {x: 1, y: 1}
---- !u!114 &1596259865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164317965227067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac24d8e98e97620458dc0c6fbe26a958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnInput
-  _showInfo: 1
-  _explanation: "When key Space is pressed (this can only happen every 1,5 seconds):\n         
-    plays sound Thomas's Whistle at volume 1 and at pitch 1\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 1596259864}
-  inputType: 1
-  buttonName: 
-  key: 32
-  axis: 
-  deadArea: {x: -0.2, y: 0.2}
-  continuous: 0
-  negate: 0
-  useCooldown: 1
-  cooldown: 1.5
-  elseActions: []
 --- !u!58 &1596259907
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -276953,21 +276927,12 @@ MonoBehaviour:
   maxAcceleration: 250
   accelerationDecrease: 250
   frictionPower: 125
-  groundCheck: {fileID: 1377973852130035065}
-  groundCheckRadius: 3
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  movingGravity: 7
   playerPivot: {fileID: 7654576803622752811}
   collisionDetectionRadius: 18
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2048
   collisionCooldown: 2
-  levelEndTouch:
-    serializedVersion: 2
-    m_Bits: 128
   puffingCooldown: 0.7
   accelerationRate: 60
   puffing: {fileID: 8300000, guid: f985a7b35a826d540842b4617e27ab82, type: 3}
@@ -285234,15 +285199,10 @@ GameObject:
   - component: {fileID: 7654576803622752811}
   - component: {fileID: 422128524348529614}
   - component: {fileID: 1596259908}
+  - component: {fileID: 9174579719839809906}
   - component: {fileID: 1596259907}
   - component: {fileID: 9174579719839809905}
   - component: {fileID: 4560246335636383936}
-  - component: {fileID: 1596259865}
-  - component: {fileID: 1596259864}
-  - component: {fileID: 9174579719839809908}
-  - component: {fileID: 9174579719839809907}
-  - component: {fileID: 9174579719839809906}
-  - component: {fileID: 9174579719839809909}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -285388,173 +285348,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8988164317965227067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
+  m_Script: {fileID: 11500000, guid: 67fb7ec4abc38304d8cea44116a5c49d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Toggles object Stunned
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1235750823}
-  state: 2
---- !u!114 &9174579719839809907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164317965227067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Toggles object Stunned
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 365381601}
-  state: 2
---- !u!114 &9174579719839809908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164317965227067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b66a51b7fe64c4390ac471b7df316b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnCollision
-  _showInfo: 1
-  _explanation: "When a collision with a bounding volume with tags [Collisionable]
-    starts:\n          toggles object Stunned\n          toggles object Stunned\n
-    then, at 0,5 seconds, \n          toggles object Stunned\n          toggles object
-    Stunned\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 9174579719839809907}
-  - delay: 0
-    action: {fileID: 9174579719839809906}
-  - delay: 0.5
-    action: {fileID: 9174579719839809907}
-  - delay: 0.5
-    action: {fileID: 9174579719839809906}
-  isTrigger: 0
-  eventType: 0
-  tags:
-  - {fileID: 11400000, guid: abf81bf715238374d9c2fe4bfaa41d50, type: 2}
---- !u!82 &9174579719839809909
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164317965227067}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  m_EditorClassIdentifier: Assembly-CSharp::Whistle
+  whistleCooldown: 1.5
+  ScriptThatUsesWhistle1: {fileID: 426161126}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -285570,6 +285368,7 @@ SceneRoots:
   - {fileID: 7654576803622752811}
   - {fileID: 817571927}
   - {fileID: 568957881}
+  - {fileID: 1318574979}
   - {fileID: 1050940741}
   - {fileID: 222246402}
   - {fileID: 815459605}

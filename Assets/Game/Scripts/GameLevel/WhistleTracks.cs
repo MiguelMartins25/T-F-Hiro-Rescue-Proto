@@ -1,14 +1,10 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WhistleTracks : MonoBehaviour
 {
-    private GameObject railsUp;
-    private GameObject railsDown;
-    private float cooldownTimer = 0.0f;
-    [SerializeField] private float railChangeCooldown = 1.5f;
-    private bool space = false;
+    private GameObject RailsUp;
+    private GameObject RailsDown;
+    private bool whistle = false;
     private bool railState = false;
     private bool disable = false;
     private bool forceRailsDown = false;
@@ -16,53 +12,44 @@ public class WhistleTracks : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        railsDown = this.transform.GetChild(0).gameObject;
-        railsUp = this.transform.GetChild(1).gameObject;
+        RailsDown = this.transform.GetChild(0).gameObject;
+        RailsUp = this.transform.GetChild(1).gameObject;
 
 
-        railsUp.gameObject.SetActive(false);
-        railsDown.gameObject.SetActive(true);
+        RailsUp.gameObject.SetActive(false);
+        RailsDown.gameObject.SetActive(true); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        space = Input.GetKeyDown("space");
+        if(whistle == true)
+            Debug.Log("cheese");
 
-        if (space == true && railState == false && disable == false)
+        if (whistle == true && railState == false && disable == false)
         {
-            if (cooldownTimer >= railChangeCooldown)
-            {
-                railsUp.gameObject.SetActive(true);
-                railsDown.gameObject.SetActive(false);
-                cooldownTimer = 0.0f;
-                railState = true;
-            }
+            Debug.Log("Cheese2");
+            RailsUp.gameObject.SetActive(true);
+            RailsDown.gameObject.SetActive(false);
+            railState = true;
         }
-
-        if (space == true && railState == true && disable == false)
+        else if (whistle == true && railState == true && disable == false)
         {
-            if (cooldownTimer >= railChangeCooldown)
-            {
-                railsUp.gameObject.SetActive(false);
-                railsDown.gameObject.SetActive(true);
-                cooldownTimer = 0.0f;
-                railState = false;
-            }
+            Debug.Log("Cheese3");
+            RailsUp.gameObject.SetActive(false);
+            RailsDown.gameObject.SetActive(true);
+            railState = false;
         }   
     }
-
-    void FixedUpdate()
-    {
-
-        if (cooldownTimer < railChangeCooldown)
-            cooldownTimer = cooldownTimer + Time.fixedDeltaTime;
     
-    }
-    
-    public void DisableWhistle(bool allow)
+    public void DisableTrackChange(bool allow)
     {
         disable = allow;
+    }
+
+    public void ActiveWhistle(bool enable)
+    {
+        whistle = enable;
     }
 
     public void ForceRailsUp(bool allow)
@@ -70,8 +57,8 @@ public class WhistleTracks : MonoBehaviour
         forceRailsDown = allow;
         if (forceRailsDown == true)
         {
-            railsUp.gameObject.SetActive(true);
-            railsDown.gameObject.SetActive(false);
+            RailsUp.gameObject.SetActive(true);
+            RailsDown.gameObject.SetActive(false);
             forceRailsDown = false;
         }
     }
@@ -81,10 +68,9 @@ public class WhistleTracks : MonoBehaviour
         forceRailsUp = allow;
         if (forceRailsUp == true)
         {
-            railsUp.gameObject.SetActive(false);
-            railsDown.gameObject.SetActive(true);
+            RailsUp.gameObject.SetActive(false);
+            RailsDown.gameObject.SetActive(true);
             forceRailsUp = false;
-            Debug.Log("Works");
         }
     }
 }

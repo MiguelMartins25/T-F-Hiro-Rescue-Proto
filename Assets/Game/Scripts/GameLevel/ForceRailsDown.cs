@@ -16,17 +16,13 @@ public class ForceRailsDown : MonoBehaviour
     }
         private void OnTriggerEnter2D(Collider2D other)
     {
-        WhistleTracks controller =
-            whistleRails.GetComponent<WhistleTracks>();
+        WhistleTracks controller = whistleRails.GetComponent<WhistleTracks>();
         controller.ForceRailsDown(true);
-        Debug.Log("Rails forced down");
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        WhistleTracks controller =
-            whistleRails.GetComponent<WhistleTracks>();
+        WhistleTracks controller = whistleRails.GetComponent<WhistleTracks>();
         controller.ForceRailsDown(false);
-        Debug.Log("Rails forced end");
     }
 }

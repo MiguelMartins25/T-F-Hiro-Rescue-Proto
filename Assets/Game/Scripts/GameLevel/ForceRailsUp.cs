@@ -20,7 +20,6 @@ public class ForceRailsUp : MonoBehaviour
         WhistleTracks controller =
             whistleRails.GetComponent<WhistleTracks>();
         controller.ForceRailsUp(true);
-        Debug.Log("Rails forced up");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -28,6 +27,5 @@ public class ForceRailsUp : MonoBehaviour
         WhistleTracks controller =
             whistleRails.GetComponent<WhistleTracks>();
         controller.ForceRailsUp(false);
-        Debug.Log("Rails force end");
     }
 }
