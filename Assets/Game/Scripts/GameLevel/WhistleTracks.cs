@@ -23,19 +23,14 @@ public class WhistleTracks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(whistle == true)
-            Debug.Log("cheese");
-
         if (whistle == true && railState == false && disable == false)
         {
-            Debug.Log("Cheese2");
             RailsUp.gameObject.SetActive(true);
             RailsDown.gameObject.SetActive(false);
             railState = true;
         }
         else if (whistle == true && railState == true && disable == false)
         {
-            Debug.Log("Cheese3");
             RailsUp.gameObject.SetActive(false);
             RailsDown.gameObject.SetActive(true);
             railState = false;
