@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class Whistle : MonoBehaviour
 {
-    private float cooldownTimer = 0.0f;
+    private float cooldownTimer = 1.5f;
     [SerializeField] private float whistleCooldown = 1.5f;
     [SerializeField] private GameObject ScriptThatUsesWhistle1;
     private bool space = false;
     private bool whistle = false;
+    [SerializeField] private AudioClip whistleSound;
+    [SerializeField] private GameObject AudioSource;
+    private AudioSource audioPlayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        audioPlayer = AudioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class Whistle : MonoBehaviour
             {
                 whistle = true;
                 cooldownTimer = 0.0f;
+                audioPlayer.PlayOneShot(whistleSound);
             }
         }
         else
