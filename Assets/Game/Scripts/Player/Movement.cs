@@ -81,7 +81,8 @@ public class Movement : MonoBehaviour
             // Forward
             if (horizontal > 0)
             {
-                if (speed < 0){
+                if (speed < 0)
+                {
                     // To be more forgiving and not feel terrible to try and control;
                     // This is a Thomas the Tank Engine game, for God's sake! Lil' Timmy
                     // would break into tears with how many times Thomas was crashing into things
@@ -89,46 +90,52 @@ public class Movement : MonoBehaviour
                     speed += acceleration * 3 * Time.fixedDeltaTime;
                     foreach (Animator anim in sparks)
                     {
-                        anim.SetBool("IsBraking", true);}
+                        anim.SetBool("IsBraking", true); // Triggers every spark anim in array
                     }
+                }
 
-                else {
+                else
+                {
                     speed += acceleration * Time.fixedDeltaTime;
                     foreach (Animator anim in sparks)
                     {
-                        anim.SetBool("IsBraking", false);}
-                    }
+                        anim.SetBool("IsBraking", false);} // Disables afterwards or keeps disabled
+                                                           // when not needed
+                }
             }
 
             // Back
             if (horizontal < 0)
             {
-                if (speed > 0){
+                if (speed > 0)
+                {
                     // Same as the above, but for braking
                     speed -= acceleration * 3 * Time.fixedDeltaTime;
 
                     foreach (SpriteRenderer sprite in sparkSprites)
                     {
-                        sprite.flipX = true;
+                        sprite.flipX = true; // Flips each spark sprite before triggering the
+                                             // animations
                     }
                     
                     foreach (Animator anim in sparks)
                     {
-                        anim.SetBool("IsBraking", true);
+                        anim.SetBool("IsBraking", true); // Triggers every blah blah blah
                     }
                 }
 
-                else {
+                else 
+                {
                     speed -= acceleration * Time.fixedDeltaTime;
 
                     foreach (SpriteRenderer sprite in sparkSprites)
                     {
-                        sprite.flipX = false;
+                        sprite.flipX = false; // Unflips each spark
                     }
-                    
+
                     foreach (Animator anim in sparks)
                     {
-                        anim.SetBool("IsBraking", false);
+                        anim.SetBool("IsBraking", false); // Disables
                     }
                 }
             }
