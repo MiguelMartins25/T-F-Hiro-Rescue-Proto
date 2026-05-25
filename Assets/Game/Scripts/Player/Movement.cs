@@ -22,6 +22,9 @@ public class Movement : MonoBehaviour
     // Sprite-related
     [SerializeField] public SpriteRenderer spriteRenderer;
     [SerializeField] public Animator animator;
+    [SerializeField] public SpriteRenderer[] sparkSprites;
+    [SerializeField] public Animator[] sparks;
+
 
     // How far the ground detectors can trigger
     public float rayLength = 500f;
@@ -83,9 +86,18 @@ public class Movement : MonoBehaviour
                     // This is a Thomas the Tank Engine game, for God's sake! Lil' Timmy
                     // would break into tears with how many times Thomas was crashing into things
                     // during testing!
-                    speed += acceleration * 3 * Time.fixedDeltaTime;}
+                    speed += acceleration * 3 * Time.fixedDeltaTime;
+                    foreach (Animator anim in sparks)
+                    {
+                        anim.SetBool("IsBraking", true);}
+                    }
 
-                else {speed += acceleration * Time.fixedDeltaTime;}
+                else {
+                    speed += acceleration * Time.fixedDeltaTime;
+                    foreach (Animator anim in sparks)
+                    {
+                        anim.SetBool("IsBraking", false);}
+                    }
             }
 
             // Back
@@ -93,10 +105,34 @@ public class Movement : MonoBehaviour
             {
                 if (speed > 0){
                     // Same as the above, but for braking
-                    speed -= acceleration * 3 * Time.fixedDeltaTime;}
+                    speed -= acceleration * 3 * Time.fixedDeltaTime;
 
-                else {speed -= acceleration * Time.fixedDeltaTime;}
+                    foreach (SpriteRenderer sprite in sparkSprites)
+                    {
+                        sprite.flipX = true;
+                    }
+                    
+                    foreach (Animator anim in sparks)
+                    {
+                        anim.SetBool("IsBraking", true);
+                    }
+                }
+
+                else {
+                    speed -= acceleration * Time.fixedDeltaTime;
+
+                    foreach (SpriteRenderer sprite in sparkSprites)
+                    {
+                        sprite.flipX = false;
+                    }
+                    
+                    foreach (Animator anim in sparks)
+                    {
+                        anim.SetBool("IsBraking", false);
+                    }
+                }
             }
+            
             
             // Idle, N/A
             if (horizontal == 0)
