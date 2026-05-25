@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 2d9795242b684f34b924ec4399673d4b
+guid: ed9721920458b3f449ba1357ac027be2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5739724147501847755
-    second: thomas_0
+      213: -3880360581713290289
+    second: thomas 1_0
   - first:
-      213: -5487639650470477997
-    second: thomas_1
+      213: 2942908371067641213
+    second: thomas 1_1
   - first:
-      213: -7878782597183479650
-    second: thomas_2
+      213: 7445983254807665606
+    second: thomas 1_2
+  - first:
+      213: 857828917249335434
+    second: thomas 1_3
+  - first:
+      213: 8138083538155465993
+    second: thomas 1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,18 +52,18 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,7 +129,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -132,10 +138,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc45498a3b897af40800000000000000
-      internalID: 5739724147501847755
+      spriteID: fe9d370160da43644b01383e2b68efe4
+      internalID: -1728506269
       vertices: []
       indices: 
       edges: []
@@ -145,7 +151,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -154,10 +160,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 35fbb5a00dcf7d3b0800000000000000
-      internalID: -5487639650470477997
+      spriteID: b42fa41c7637dc3488053e926a99d1ba
+      internalID: -627324890
       vertices: []
       indices: 
       edges: []
@@ -167,6 +173,138 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85c886156a80d440ba1a89a60fb5c49
+      internalID: -1250391508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a68a70bc81d034e9a9c88b1499c108
+      internalID: -255614085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bf031b7d0a7fe4ead8228db163ac8d
+      internalID: -1098865094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08f8528168f1c4469f54e93c2b9f8d6
+      internalID: 1083155244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d31cb05714e3d45a0e8f0a53cdcf0a
+      internalID: 1926783593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b22316c69104043b638b6d34e71ea9
+      internalID: 2032819049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_8
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -176,16 +314,82 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e906950b8f0f8a290800000000000000
-      internalID: -7878782597183479650
+      spriteID: cb218ada4c8dd2047afa9b6eabd4c0cf
+      internalID: 1261926393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_3
+      name: thomas_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc568735004d2f4428e149e0bddf862d
+      internalID: -1334863686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42807b3b0255cf418d9a87fc9d97db4
+      internalID: -662870455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fa1310e815dd6478100ce048cb1919
+      internalID: 295851657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_12
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139acd0d9536eef478c30c32310504a9
-      internalID: 837540900
+      spriteID: 70bba32541587ae4a9ca2478cab037a0
+      internalID: 1090429417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_4
+      name: thomas_13
       rect:
         serializedVersion: 2
         x: 32
@@ -222,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85d96d76acd7bf74aa217de6bb21f903
-      internalID: -299773797
+      spriteID: 708e787668d5ccf4f8236bdaf5a8d079
+      internalID: -111407775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_5
+      name: thomas_14
       rect:
         serializedVersion: 2
         x: 64
@@ -244,14 +448,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3c32e1c95b696a44ad72108cf0d2ca1
-      internalID: 40876776
+      spriteID: fba58e8bf26121c4bbce494605e53d46
+      internalID: -8584645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_6
+      name: thomas_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdaed4b66a3cfc4fbaa3e76eda6f21f
+      internalID: 846243547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_16
       rect:
         serializedVersion: 2
         x: 0
@@ -266,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d30de82ca5c4c3c419fbc7473e2a1985
-      internalID: -1803859299
+      spriteID: 143aac63effc77344aa6269f1cd88b10
+      internalID: 444335958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_7
+      name: thomas_17
       rect:
         serializedVersion: 2
         x: 32
@@ -288,14 +514,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9200e6d1e978b5d4486a9125f18b9060
-      internalID: 173892240
+      spriteID: f4dc833f968687e40a609d5ad6b7aee3
+      internalID: -2065161673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thomas_8
+      name: thomas_18
       rect:
         serializedVersion: 2
         x: 64
@@ -310,8 +536,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96b29c9d9a0f2844ba4170c718efc086
-      internalID: 224458170
+      spriteID: 93685d58f0be16645b9bb39f80ecec04
+      internalID: -23314589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thomas_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963d0ceca4a94e24a89fbb7169a5c600
+      internalID: -124280749
       vertices: []
       indices: 
       edges: []
@@ -320,7 +568,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a6697cc969998eb40bbf50f8f0664eb5
+    spriteID: ab4aac40171f0c54396ff130746fb42a
     internalID: 0
     vertices: []
     indices: 
@@ -332,15 +580,26 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thomas_0: 5739724147501847755
-      thomas_1: -5487639650470477997
-      thomas_2: -7878782597183479650
-      thomas_3: 837540900
-      thomas_4: -299773797
-      thomas_5: 40876776
-      thomas_6: -1803859299
-      thomas_7: 173892240
-      thomas_8: 224458170
+      thomas_0: -1728506269
+      thomas_1: -627324890
+      thomas_10: -662870455
+      thomas_11: 295851657
+      thomas_12: 1090429417
+      thomas_13: -111407775
+      thomas_14: -8584645
+      thomas_15: 846243547
+      thomas_16: 444335958
+      thomas_17: -2065161673
+      thomas_18: -23314589
+      thomas_19: -124280749
+      thomas_2: -1250391508
+      thomas_3: -255614085
+      thomas_4: -1098865094
+      thomas_5: 1083155244
+      thomas_6: 1926783593
+      thomas_7: 2032819049
+      thomas_8: 1261926393
+      thomas_9: -1334863686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
