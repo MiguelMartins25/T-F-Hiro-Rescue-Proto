@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Highlighted
+  m_Name: HighlightedB
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -222,7 +222,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pressed
+  m_Name: PressedB
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -590,7 +590,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Selected
+  m_Name: SelectedB
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -603,7 +603,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 6317570097286609175}
+  m_Motion: {fileID: -1180012572985331684}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -616,7 +616,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Disabled
+  m_Name: DisabledB
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -769,7 +769,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Normal
+  m_Name: NormalB
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -399,6 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 145164491}
+  - component: {fileID: 145164492}
   m_Layer: 0
   m_Name: MainMenuButtons
   m_TagString: Untagged
@@ -425,6 +426,28 @@ Transform:
   - {fileID: 1401264707}
   m_Father: {fileID: 639093533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &145164492
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145164490}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b6901a6a59c97747856e1669fe7330d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &212879430
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2079,7 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2301,6 +2324,7 @@ GameObject:
   - component: {fileID: 906936697}
   - component: {fileID: 906936696}
   - component: {fileID: 906936700}
+  - component: {fileID: 906936701}
   m_Layer: 0
   m_Name: GameStart
   m_TagString: Untagged
@@ -2457,7 +2481,8 @@ MonoBehaviour:
   _explanation: "When this object is created:\n          disables object Audio Source\n         
     plays sound Hiro'sWhistle.m4a (online-audio-converter.com) at volume 1 and at
     pitch 1\n          plays sound Thomas & Friends  Engine Weeshing Steam Sound
-    Effect at volume 1 and at pitch 1\n"
+    Effect at volume 1 and at pitch 1\n          enables component MainMenuButtons
+    (UnityEngine.Animator)\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 0
@@ -2470,6 +2495,8 @@ MonoBehaviour:
     action: {fileID: 906936697}
   - delay: 0
     action: {fileID: 906936696}
+  - delay: 0
+    action: {fileID: 906936701}
 --- !u!114 &906936699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,6 +2546,28 @@ MonoBehaviour:
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
   timeInterval: {x: 5, y: 5}
+--- !u!114 &906936701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906936691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
+  _showInfo: 1
+  _explanation: Enables component MainMenuButtons (UnityEngine.Animator)
+  description: 
+  enableAction: 1
+  hasTags: 0
+  actionTags: []
+  hasConditions: 0
+  actionConditions: []
+  target: {fileID: 145164492}
+  state: 0
 --- !u!1 &951939859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 128257287}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1036574872
@@ -3163,7 +3212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}

@@ -12,9 +12,9 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private float maxSpeed = 150;
     //Max character acceleration
     [SerializeField] private float maxAcceleration = 50;
-    //Rate of acelaration lost after no inputs
+    //Rate of acceleration lost after no inputs
     [SerializeField] private float accelerationDecrease = 1;
-    //How fast speed drecreases after reaching 0 acceleration
+    //How fast speed decreases after reaching 0 acceleration
     [SerializeField] private float frictionPower = 2;
     //Area for player collision check
     [SerializeField] private Transform playerPivot;
@@ -24,13 +24,13 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private LayerMask collisionLayer;
     //Time between bounce of collision
     [SerializeField] private float collisionCooldown;
-    
+    [SerializeField] private GameObject AudioSource;
     private Rigidbody2D     rb;
     private bool            onCollision;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
     [SerializeField] private float accelerationRate = 60.0f;
-
+    private AudioSource audioPlayer;
     //Place to put audio in
     [SerializeField] private AudioClip puffing;
     //Bool to known when player is moving
@@ -41,6 +41,7 @@ public class PlayerThomas : MonoBehaviour
     {
         //RigidBody of Player
         rb = GetComponent<Rigidbody2D>(); 
+        audioPlayer = AudioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -64,7 +65,7 @@ public class PlayerThomas : MonoBehaviour
     //puffing sound player
     void PuffingSounds()
     {
-        SoundManager.PlaySound(puffing);
+        audioPlayer.PlayOneShot(puffing);
     }
     
     //checks for player and level collidable collision
