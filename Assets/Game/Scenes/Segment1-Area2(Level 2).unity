@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 26029888}
   - component: {fileID: 26029887}
   - component: {fileID: 26029886}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1868,7 @@ GameObject:
   - component: {fileID: 51333421}
   - component: {fileID: 51333420}
   - component: {fileID: 51333419}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2097,7 +2097,7 @@ GameObject:
   - component: {fileID: 76270918}
   - component: {fileID: 76270917}
   - component: {fileID: 76270916}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 103231075}
   - component: {fileID: 103231074}
   - component: {fileID: 103231073}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2556,7 +2556,7 @@ GameObject:
   - component: {fileID: 118015114}
   - component: {fileID: 118015113}
   - component: {fileID: 118015112}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3044,7 +3044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 179588104}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8451,7 +8451,7 @@ GameObject:
   - component: {fileID: 217578115}
   - component: {fileID: 217578114}
   - component: {fileID: 217578113}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8767,7 +8767,7 @@ GameObject:
   - component: {fileID: 223875741}
   - component: {fileID: 223875740}
   - component: {fileID: 223875739}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8978,7 +8978,7 @@ GameObject:
   - component: {fileID: 232294991}
   - component: {fileID: 232294990}
   - component: {fileID: 232294989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9405,7 +9405,7 @@ GameObject:
   - component: {fileID: 258303286}
   - component: {fileID: 258303285}
   - component: {fileID: 258303284}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10261,7 +10261,7 @@ GameObject:
   - component: {fileID: 305581163}
   - component: {fileID: 305581162}
   - component: {fileID: 305581161}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10381,7 +10381,7 @@ GameObject:
   - component: {fileID: 315197927}
   - component: {fileID: 315197926}
   - component: {fileID: 315197925}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10534,7 +10534,7 @@ GameObject:
   - component: {fileID: 342830126}
   - component: {fileID: 342830125}
   - component: {fileID: 342830124}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10970,7 +10970,7 @@ GameObject:
   - component: {fileID: 376939507}
   - component: {fileID: 376939506}
   - component: {fileID: 376939505}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11090,7 +11090,7 @@ GameObject:
   - component: {fileID: 382976509}
   - component: {fileID: 382976508}
   - component: {fileID: 382976507}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11301,7 +11301,7 @@ GameObject:
   - component: {fileID: 394861755}
   - component: {fileID: 394861754}
   - component: {fileID: 394861753}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11751,7 +11751,7 @@ GameObject:
   - component: {fileID: 414608138}
   - component: {fileID: 414608137}
   - component: {fileID: 414608136}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11967,7 +11967,7 @@ GameObject:
   - component: {fileID: 423537956}
   - component: {fileID: 423537955}
   - component: {fileID: 423537954}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12136,7 +12136,7 @@ GameObject:
   - component: {fileID: 429482423}
   - component: {fileID: 429482422}
   - component: {fileID: 429482421}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12256,7 +12256,7 @@ GameObject:
   - component: {fileID: 433848819}
   - component: {fileID: 433848818}
   - component: {fileID: 433848817}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73356,7 +73356,7 @@ GameObject:
   - component: {fileID: 478055974}
   - component: {fileID: 478055973}
   - component: {fileID: 478055972}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73476,7 +73476,7 @@ GameObject:
   - component: {fileID: 483242134}
   - component: {fileID: 483242133}
   - component: {fileID: 483242132}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73629,7 +73629,7 @@ GameObject:
   - component: {fileID: 487887368}
   - component: {fileID: 487887367}
   - component: {fileID: 487887366}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73782,7 +73782,7 @@ GameObject:
   - component: {fileID: 503937965}
   - component: {fileID: 503937964}
   - component: {fileID: 503937963}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74068,7 +74068,7 @@ GameObject:
   - component: {fileID: 525589993}
   - component: {fileID: 525589992}
   - component: {fileID: 525589991}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77534,7 +77534,7 @@ GameObject:
   - component: {fileID: 552816462}
   - component: {fileID: 552816461}
   - component: {fileID: 552816460}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78237,7 +78237,7 @@ GameObject:
   - component: {fileID: 609231529}
   - component: {fileID: 609231528}
   - component: {fileID: 609231527}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78771,7 +78771,7 @@ GameObject:
   - component: {fileID: 628345715}
   - component: {fileID: 628345714}
   - component: {fileID: 628345713}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79092,7 +79092,7 @@ GameObject:
   - component: {fileID: 662183612}
   - component: {fileID: 662183611}
   - component: {fileID: 662183610}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79209,7 +79209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665295923}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WhistleDisable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79245,7 +79245,7 @@ GameObject:
   - component: {fileID: 669275590}
   - component: {fileID: 669275589}
   - component: {fileID: 669275588}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79531,7 +79531,7 @@ GameObject:
   - component: {fileID: 700678104}
   - component: {fileID: 700678103}
   - component: {fileID: 700678102}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79651,7 +79651,7 @@ GameObject:
   - component: {fileID: 702081825}
   - component: {fileID: 702081824}
   - component: {fileID: 702081823}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79771,7 +79771,7 @@ GameObject:
   - component: {fileID: 704625412}
   - component: {fileID: 704625411}
   - component: {fileID: 704625413}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80556,7 +80556,7 @@ GameObject:
   - component: {fileID: 747754970}
   - component: {fileID: 747754969}
   - component: {fileID: 747754968}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80676,7 +80676,7 @@ GameObject:
   - component: {fileID: 760855589}
   - component: {fileID: 760855588}
   - component: {fileID: 760855587}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80796,7 +80796,7 @@ GameObject:
   - component: {fileID: 761563339}
   - component: {fileID: 761563338}
   - component: {fileID: 761563337}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81144,7 +81144,7 @@ GameObject:
   - component: {fileID: 784363050}
   - component: {fileID: 784363049}
   - component: {fileID: 784363048}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81339,7 +81339,7 @@ GameObject:
   - component: {fileID: 797584490}
   - component: {fileID: 797584489}
   - component: {fileID: 797584488}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81498,7 +81498,7 @@ GameObject:
   - component: {fileID: 802713550}
   - component: {fileID: 802713549}
   - component: {fileID: 802713548}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81654,7 +81654,7 @@ GameObject:
   - component: {fileID: 826133435}
   - component: {fileID: 826133434}
   - component: {fileID: 826133433}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81774,7 +81774,7 @@ GameObject:
   - component: {fileID: 827632056}
   - component: {fileID: 827632055}
   - component: {fileID: 827632054}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82021,7 +82021,7 @@ MonoBehaviour:
   - {fileID: 1035259712}
   - {fileID: 142306328}
   - {fileID: 1660435893}
-  rayLength: 500
+  rayLength: 350
 --- !u!1 &845760618
 GameObject:
   m_ObjectHideFlags: 0
@@ -82385,7 +82385,7 @@ GameObject:
   - component: {fileID: 854151661}
   - component: {fileID: 854151660}
   - component: {fileID: 854151659}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86102,7 +86102,7 @@ GameObject:
   - component: {fileID: 882900955}
   - component: {fileID: 882900954}
   - component: {fileID: 882900953}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86498,7 +86498,7 @@ GameObject:
   - component: {fileID: 937424487}
   - component: {fileID: 937424486}
   - component: {fileID: 937424485}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86618,7 +86618,7 @@ GameObject:
   - component: {fileID: 949689930}
   - component: {fileID: 949689929}
   - component: {fileID: 949689928}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86771,7 +86771,7 @@ GameObject:
   - component: {fileID: 964442213}
   - component: {fileID: 964442212}
   - component: {fileID: 964442211}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86891,7 +86891,7 @@ GameObject:
   - component: {fileID: 967700245}
   - component: {fileID: 967700244}
   - component: {fileID: 967700243}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87011,7 +87011,7 @@ GameObject:
   - component: {fileID: 967711684}
   - component: {fileID: 967711683}
   - component: {fileID: 967711682}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87281,7 +87281,7 @@ GameObject:
   - component: {fileID: 992211195}
   - component: {fileID: 992211194}
   - component: {fileID: 992211193}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87401,7 +87401,7 @@ GameObject:
   - component: {fileID: 1000473225}
   - component: {fileID: 1000473224}
   - component: {fileID: 1000473223}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87663,7 +87663,7 @@ GameObject:
   - component: {fileID: 1017728375}
   - component: {fileID: 1017728374}
   - component: {fileID: 1017728373}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87949,7 +87949,7 @@ GameObject:
   - component: {fileID: 1055084507}
   - component: {fileID: 1055084506}
   - component: {fileID: 1055084505}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88320,7 +88320,7 @@ GameObject:
   - component: {fileID: 1080870448}
   - component: {fileID: 1080870447}
   - component: {fileID: 1080870446}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88437,7 +88437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090128957}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Small Areas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88508,7 +88508,7 @@ GameObject:
   - component: {fileID: 1090253637}
   - component: {fileID: 1090253636}
   - component: {fileID: 1090253635}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88628,7 +88628,7 @@ GameObject:
   - component: {fileID: 1109690457}
   - component: {fileID: 1109690456}
   - component: {fileID: 1109690455}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99180,7 +99180,7 @@ Transform:
   m_GameObject: {fileID: 1126186802}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.2, y: -1.4000397, z: 0}
+  m_LocalPosition: {x: -17.2, y: 5.3000336, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99244,7 +99244,7 @@ GameObject:
   - component: {fileID: 1130134695}
   - component: {fileID: 1130134694}
   - component: {fileID: 1130134693}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99364,7 +99364,7 @@ GameObject:
   - component: {fileID: 1135366174}
   - component: {fileID: 1135366173}
   - component: {fileID: 1135366172}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99484,7 +99484,7 @@ GameObject:
   - component: {fileID: 1138473807}
   - component: {fileID: 1138473806}
   - component: {fileID: 1138473805}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99604,7 +99604,7 @@ GameObject:
   - component: {fileID: 1147287812}
   - component: {fileID: 1147287811}
   - component: {fileID: 1147287810}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100000,7 +100000,7 @@ GameObject:
   - component: {fileID: 1156390317}
   - component: {fileID: 1156390316}
   - component: {fileID: 1156390315}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100120,7 +100120,7 @@ GameObject:
   - component: {fileID: 1165756801}
   - component: {fileID: 1165756800}
   - component: {fileID: 1165756799}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100240,7 +100240,7 @@ GameObject:
   - component: {fileID: 1167465938}
   - component: {fileID: 1167465937}
   - component: {fileID: 1167465936}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100360,7 +100360,7 @@ GameObject:
   - component: {fileID: 1175513451}
   - component: {fileID: 1175513450}
   - component: {fileID: 1175513449}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100480,7 +100480,7 @@ GameObject:
   - component: {fileID: 1175681875}
   - component: {fileID: 1175681874}
   - component: {fileID: 1175681873}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100844,7 +100844,7 @@ GameObject:
   - component: {fileID: 1224713339}
   - component: {fileID: 1224713338}
   - component: {fileID: 1224713337}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100964,7 +100964,7 @@ GameObject:
   - component: {fileID: 1225031374}
   - component: {fileID: 1225031373}
   - component: {fileID: 1225031372}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101159,7 +101159,7 @@ GameObject:
   - component: {fileID: 1260747028}
   - component: {fileID: 1260747027}
   - component: {fileID: 1260747026}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272242,7 +272242,7 @@ GameObject:
   - component: {fileID: 1286953907}
   - component: {fileID: 1286953906}
   - component: {fileID: 1286953905}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272362,7 +272362,7 @@ GameObject:
   - component: {fileID: 1289144950}
   - component: {fileID: 1289144949}
   - component: {fileID: 1289144948}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272482,7 +272482,7 @@ GameObject:
   - component: {fileID: 1296775260}
   - component: {fileID: 1296775259}
   - component: {fileID: 1296775258}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272935,7 +272935,7 @@ GameObject:
   - component: {fileID: 1307748883}
   - component: {fileID: 1307748882}
   - component: {fileID: 1307748881}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273055,7 +273055,7 @@ GameObject:
   - component: {fileID: 1308248147}
   - component: {fileID: 1308248146}
   - component: {fileID: 1308248145}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273363,7 +273363,7 @@ GameObject:
   - component: {fileID: 1320099575}
   - component: {fileID: 1320099574}
   - component: {fileID: 1320099573}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273483,7 +273483,7 @@ GameObject:
   - component: {fileID: 1323156625}
   - component: {fileID: 1323156624}
   - component: {fileID: 1323156623}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278455,7 +278455,7 @@ GameObject:
   - component: {fileID: 1335546106}
   - component: {fileID: 1335546105}
   - component: {fileID: 1335546104}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278575,7 +278575,7 @@ GameObject:
   - component: {fileID: 1362151805}
   - component: {fileID: 1362151804}
   - component: {fileID: 1362151803}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278985,7 +278985,7 @@ GameObject:
   - component: {fileID: 1379253071}
   - component: {fileID: 1379253070}
   - component: {fileID: 1379253069}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279105,7 +279105,7 @@ GameObject:
   - component: {fileID: 1379275677}
   - component: {fileID: 1379275676}
   - component: {fileID: 1379275675}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291819,7 +291819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395195873}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpTriggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291889,7 +291889,7 @@ GameObject:
   - component: {fileID: 1416292293}
   - component: {fileID: 1416292292}
   - component: {fileID: 1416292291}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292009,7 +292009,7 @@ GameObject:
   - component: {fileID: 1441040525}
   - component: {fileID: 1441040524}
   - component: {fileID: 1441040523}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292258,7 +292258,7 @@ GameObject:
   - component: {fileID: 1453901335}
   - component: {fileID: 1453901334}
   - component: {fileID: 1453901333}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292378,7 +292378,7 @@ GameObject:
   - component: {fileID: 1465159578}
   - component: {fileID: 1465159577}
   - component: {fileID: 1465159576}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294628,7 +294628,7 @@ GameObject:
   - component: {fileID: 1505001092}
   - component: {fileID: 1505001091}
   - component: {fileID: 1505001090}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294857,7 +294857,7 @@ GameObject:
   - component: {fileID: 1551019481}
   - component: {fileID: 1551019480}
   - component: {fileID: 1551019479}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295017,7 +295017,7 @@ GameObject:
   - component: {fileID: 1560484750}
   - component: {fileID: 1560484749}
   - component: {fileID: 1560484748}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295137,7 +295137,7 @@ GameObject:
   - component: {fileID: 1560889391}
   - component: {fileID: 1560889390}
   - component: {fileID: 1560889389}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295575,7 +295575,7 @@ GameObject:
   - component: {fileID: 1574801096}
   - component: {fileID: 1574801095}
   - component: {fileID: 1574801094}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296754,7 +296754,7 @@ GameObject:
   - component: {fileID: 1642330563}
   - component: {fileID: 1642330562}
   - component: {fileID: 1642330561}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296874,7 +296874,7 @@ GameObject:
   - component: {fileID: 1647330953}
   - component: {fileID: 1647330952}
   - component: {fileID: 1647330951}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297501,7 +297501,7 @@ GameObject:
   - component: {fileID: 1687310396}
   - component: {fileID: 1687310395}
   - component: {fileID: 1687310394}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297621,7 +297621,7 @@ GameObject:
   - component: {fileID: 1688680592}
   - component: {fileID: 1688680591}
   - component: {fileID: 1688680590}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298132,7 +298132,7 @@ GameObject:
   - component: {fileID: 1703044278}
   - component: {fileID: 1703044277}
   - component: {fileID: 1703044276}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298252,7 +298252,7 @@ GameObject:
   - component: {fileID: 1703925951}
   - component: {fileID: 1703925950}
   - component: {fileID: 1703925949}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298372,7 +298372,7 @@ GameObject:
   - component: {fileID: 1724477714}
   - component: {fileID: 1724477713}
   - component: {fileID: 1724477712}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298492,7 +298492,7 @@ GameObject:
   - component: {fileID: 1731909091}
   - component: {fileID: 1731909090}
   - component: {fileID: 1731909089}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298754,7 +298754,7 @@ GameObject:
   - component: {fileID: 1746476320}
   - component: {fileID: 1746476319}
   - component: {fileID: 1746476318}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298908,7 +298908,7 @@ GameObject:
   - component: {fileID: 1785024209}
   - component: {fileID: 1785024208}
   - component: {fileID: 1785024207}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299062,7 +299062,7 @@ GameObject:
   - component: {fileID: 1792537678}
   - component: {fileID: 1792537677}
   - component: {fileID: 1792537676}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299182,7 +299182,7 @@ GameObject:
   - component: {fileID: 1798251785}
   - component: {fileID: 1798251784}
   - component: {fileID: 1798251783}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299452,7 +299452,7 @@ GameObject:
   - component: {fileID: 1815079795}
   - component: {fileID: 1815079794}
   - component: {fileID: 1815079793}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299572,7 +299572,7 @@ GameObject:
   - component: {fileID: 1819017991}
   - component: {fileID: 1819017990}
   - component: {fileID: 1819017989}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299692,7 +299692,7 @@ GameObject:
   - component: {fileID: 1823738361}
   - component: {fileID: 1823738360}
   - component: {fileID: 1823738359}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299812,7 +299812,7 @@ GameObject:
   - component: {fileID: 1824954718}
   - component: {fileID: 1824954717}
   - component: {fileID: 1824954716}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300000,7 +300000,7 @@ GameObject:
   - component: {fileID: 1839946015}
   - component: {fileID: 1839946014}
   - component: {fileID: 1839946013}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300120,7 +300120,7 @@ GameObject:
   - component: {fileID: 1842697468}
   - component: {fileID: 1842697467}
   - component: {fileID: 1842697466}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300346,7 +300346,7 @@ GameObject:
   - component: {fileID: 1878619796}
   - component: {fileID: 1878619795}
   - component: {fileID: 1878619794}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300466,7 +300466,7 @@ GameObject:
   - component: {fileID: 1884416432}
   - component: {fileID: 1884416431}
   - component: {fileID: 1884416430}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300785,7 +300785,7 @@ GameObject:
   - component: {fileID: 1906172491}
   - component: {fileID: 1906172490}
   - component: {fileID: 1906172489}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300905,7 +300905,7 @@ GameObject:
   - component: {fileID: 1906480632}
   - component: {fileID: 1906480631}
   - component: {fileID: 1906480630}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301678,7 +301678,7 @@ GameObject:
   - component: {fileID: 1973074938}
   - component: {fileID: 1973074937}
   - component: {fileID: 1973074936}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301798,7 +301798,7 @@ GameObject:
   - component: {fileID: 1982332855}
   - component: {fileID: 1982332854}
   - component: {fileID: 1982332853}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301918,7 +301918,7 @@ GameObject:
   - component: {fileID: 1989466714}
   - component: {fileID: 1989466713}
   - component: {fileID: 1989466712}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302035,7 +302035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999748841}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Big Areas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302073,7 +302073,7 @@ GameObject:
   - component: {fileID: 2046457301}
   - component: {fileID: 2046457300}
   - component: {fileID: 2046457299}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302193,7 +302193,7 @@ GameObject:
   - component: {fileID: 2047434197}
   - component: {fileID: 2047434196}
   - component: {fileID: 2047434195}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302313,7 +302313,7 @@ GameObject:
   - component: {fileID: 2058929527}
   - component: {fileID: 2058929526}
   - component: {fileID: 2058929525}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302433,7 +302433,7 @@ GameObject:
   - component: {fileID: 2067012484}
   - component: {fileID: 2067012483}
   - component: {fileID: 2067012482}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302553,7 +302553,7 @@ GameObject:
   - component: {fileID: 2080666432}
   - component: {fileID: 2080666431}
   - component: {fileID: 2080666430}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceDownArea (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302673,7 +302673,7 @@ GameObject:
   - component: {fileID: 2089162424}
   - component: {fileID: 2089162423}
   - component: {fileID: 2089162422}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DisableArea (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302871,7 +302871,7 @@ GameObject:
   - component: {fileID: 2099678124}
   - component: {fileID: 2099678123}
   - component: {fileID: 2099678122}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ForceUpArea (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303812,7 +303812,7 @@ Transform:
   m_GameObject: {fileID: 5589091547724213926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.4, y: -1.4, z: 0}
+  m_LocalPosition: {x: 18.4, y: 5.3, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -304258,7 +304258,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
