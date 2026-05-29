@@ -9933,7 +9933,7 @@ Transform:
   m_GameObject: {fileID: 283704037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.4, z: 0}
+  m_LocalPosition: {x: 0, y: 11.5, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10009,7 +10009,7 @@ GameObject:
   - component: {fileID: 284932435}
   - component: {fileID: 284932437}
   - component: {fileID: 284932436}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Whistle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10025,7 +10025,7 @@ Transform:
   m_GameObject: {fileID: 284932434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3, y: 16.9, z: 0}
+  m_LocalPosition: {x: 19.4, y: 21.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78668,7 +78668,7 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  target: {fileID: 549059792}
+  target: {fileID: 1661782248}
   state: 0
 --- !u!114 &627899832
 MonoBehaviour:
@@ -78690,7 +78690,7 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  target: {fileID: 590183115}
+  target: {fileID: 283704037}
   state: 1
 --- !u!114 &627899833
 MonoBehaviour:
@@ -82021,6 +82021,7 @@ MonoBehaviour:
   - {fileID: 1035259712}
   - {fileID: 142306328}
   - {fileID: 1660435893}
+  Scared: {fileID: 1661782248}
   rayLength: 350
 --- !u!1 &845760618
 GameObject:
@@ -273619,7 +273620,7 @@ Transform:
   m_GameObject: {fileID: 1327863564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.419998, y: 20.329956, z: 0}
+  m_LocalPosition: {x: 9.419998, y: 25.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -296233,7 +296234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1600089970
 SpriteRenderer:
   serializedVersion: 2
@@ -297402,7 +297403,7 @@ Transform:
   m_GameObject: {fileID: 1661782248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 11.5, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -303781,28 +303782,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &1310052298463247691
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8988164316794869998}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 33338137254dcc841b2433ce9926d469, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1377973850883623340
 Transform:
   m_ObjectHideFlags: 0
@@ -305216,7 +305195,6 @@ GameObject:
   - component: {fileID: 1805516768778281936}
   - component: {fileID: 422128525451220763}
   - component: {fileID: 2784165576184361551}
-  - component: {fileID: 1310052298463247691}
   - component: {fileID: 4560246336605971477}
   - component: {fileID: 828895352}
   - component: {fileID: 8988164316794869999}
@@ -305243,6 +305221,8 @@ MonoBehaviour:
   ScriptThatUsesWhistle1: {fileID: 426161126}
   ScriptThatUsesWhistle2: {fileID: 1472965679}
   whistleSound: {fileID: 8300000, guid: 0c79a7c988cc6194e9c1b3e24b1bca9e, type: 3}
+  spriteRenderer: {fileID: 284932436}
+  animator: {fileID: 284932437}
   AudioSource: {fileID: 568957879}
 --- !u!1 &8988164317965227067
 GameObject:
@@ -305411,6 +305391,8 @@ MonoBehaviour:
   ScriptThatUsesWhistle1: {fileID: 426161126}
   ScriptThatUsesWhistle2: {fileID: 1472965679}
   whistleSound: {fileID: 8300000, guid: 0c79a7c988cc6194e9c1b3e24b1bca9e, type: 3}
+  spriteRenderer: {fileID: 0}
+  animator: {fileID: 0}
   AudioSource: {fileID: 568957879}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -305423,8 +305405,8 @@ SceneRoots:
   - {fileID: 1657651277}
   - {fileID: 1832671717}
   - {fileID: 784092448}
-  - {fileID: 797987601946560570}
   - {fileID: 7654576804793933566}
+  - {fileID: 797987601946560570}
   - {fileID: 7654576803622752811}
   - {fileID: 568957881}
   - {fileID: 1318574979}
