@@ -17,7 +17,9 @@ public class WhistleTracks : MonoBehaviour
 
 
         RailsUp.gameObject.SetActive(false);
+        RailsUp.gameObject.layer = LayerMask.NameToLayer("Default");
         RailsDown.gameObject.SetActive(true); 
+        RailsDown.gameObject.layer = LayerMask.NameToLayer("Ground");
     }
 
     // Update is called once per frame
@@ -26,13 +28,17 @@ public class WhistleTracks : MonoBehaviour
         if (whistle == true && railState == false && disable == false)
         {
             RailsUp.gameObject.SetActive(true);
+            RailsUp.gameObject.layer = LayerMask.NameToLayer("Ground");
             RailsDown.gameObject.SetActive(false);
+            RailsDown.gameObject.layer = LayerMask.NameToLayer("Default");
             railState = true;
         }
         else if (whistle == true && railState == true && disable == false)
         {
             RailsUp.gameObject.SetActive(false);
+            RailsUp.gameObject.layer = LayerMask.NameToLayer("Default");
             RailsDown.gameObject.SetActive(true);
+            RailsDown.gameObject.layer = LayerMask.NameToLayer("Ground");
             railState = false;
         }   
     }
@@ -53,7 +59,9 @@ public class WhistleTracks : MonoBehaviour
         if (forceRailsDown == true)
         {
             RailsUp.gameObject.SetActive(true);
+            RailsUp.gameObject.layer = LayerMask.NameToLayer("Ground");
             RailsDown.gameObject.SetActive(false);
+            RailsDown.gameObject.layer = LayerMask.NameToLayer("Default");
             forceRailsDown = false;
         }
     }
@@ -64,7 +72,9 @@ public class WhistleTracks : MonoBehaviour
         if (forceRailsUp == true)
         {
             RailsUp.gameObject.SetActive(false);
+            RailsUp.gameObject.layer = LayerMask.NameToLayer("Default");
             RailsDown.gameObject.SetActive(true);
+            RailsDown.gameObject.layer = LayerMask.NameToLayer("Ground");
             forceRailsUp = false;
         }
     }
