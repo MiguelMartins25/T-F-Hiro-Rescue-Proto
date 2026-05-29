@@ -9,6 +9,8 @@ public class Whistle : MonoBehaviour
     private bool space = false;
     private bool whistle = false;
     [SerializeField] private AudioClip whistleSound;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Animator animator;
     [SerializeField] private GameObject AudioSource;
     private AudioSource audioPlayer;
 
@@ -29,6 +31,7 @@ public class Whistle : MonoBehaviour
             {
                 whistle = true;
                 cooldownTimer = 0.0f;
+                animator.SetTrigger("Whistling");
                 audioPlayer.PlayOneShot(whistleSound);
             }
         }
