@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
     [SerializeField] public Animator animator;
     [SerializeField] public SpriteRenderer[] sparkSprites;
     [SerializeField] public Animator[] sparks;
+    [SerializeField] public GameObject Scared;
 
 
     // How far the ground detectors can trigger
@@ -34,6 +35,12 @@ public class Movement : MonoBehaviour
     {
         // Gets the direction the player is pressing
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Scared.activeInHierarchy == true)
+        {
+            spriteRenderer = Scared.GetComponent<SpriteRenderer>();
+            animator = Scared.GetComponent<Animator>();
+        }
 
         // These depend on "ThomasAnim" Animator's bools!
         if (horizontal > 0)
