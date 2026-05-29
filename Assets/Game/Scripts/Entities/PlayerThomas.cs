@@ -163,4 +163,13 @@ public class PlayerThomas : MonoBehaviour
         }
     }
 
+    public void ChangeMaxSpeed(int addMaxSpeed)
+    {
+        maxSpeed = maxSpeed + addMaxSpeed;
+    }
+
+    public void ChangeMaxAcceleration(int addMaxAcceleration)
+    {
+        maxAcceleration = maxAcceleration + addMaxAcceleration;
+    }
 }
