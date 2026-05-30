@@ -304663,7 +304663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelEnd
   endTime: 10.5
   sceneChange: MainMenu
-  AudioSource: {fileID: 0}
+  AudioSource: {fileID: 568957879}
   endTheme: {fileID: 8300000, guid: 68c7b22d52af5344fb33f50e7b844a9c, type: 3}
 --- !u!1 &8988164316794869998
 GameObject:
