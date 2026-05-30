@@ -5,14 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/MainMenu-Intro.unity
     guid: 4c1543d0061ad7d4a86bcce54fe79184
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/LoadingScreen.unity
     guid: 826877142e3e94648b23a43a5aba946e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Scenes/Segment1-Area2(Level 2).unity
     guid: 3d11f27d713404b44a96af1b60d9470f
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu.unity
+    guid: 87fb5b41380a7fd42ac8d20bc6bd2d27
+  - enabled: 1
+    path: Assets/Game/Scenes/GameDesign-Prototype.unity
+    guid: edb01f3365eb3b54ba9a144a946c235f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

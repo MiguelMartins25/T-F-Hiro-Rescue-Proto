@@ -415,7 +415,7 @@ Camera:
   m_GameObject: {fileID: 380692148}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380692148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
@@ -1461,7 +1461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
   _explanation: "Every 5 seconds, trigger the actions::\n          switches to scene
-    LoadingScreen\n"
+    GameDesign-Prototype\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -1611,14 +1611,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeScene
   _showInfo: 1
-  _explanation: Switches to scene LoadingScreen
+  _explanation: Switches to scene GameDesign-Prototype
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: LoadingScreen
+  sceneName: GameDesign-Prototype
 --- !u!114 &564673422
 MonoBehaviour:
   m_ObjectHideFlags: 0
