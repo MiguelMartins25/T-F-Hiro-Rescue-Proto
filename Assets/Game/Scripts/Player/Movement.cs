@@ -20,11 +20,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     // Sprite-related
+    [SerializeField] public GameObject Happy;
+    [SerializeField] public GameObject Scared;
     [SerializeField] public SpriteRenderer spriteRenderer;
     [SerializeField] public Animator animator;
     [SerializeField] public SpriteRenderer[] sparkSprites;
     [SerializeField] public Animator[] sparks;
-    [SerializeField] public GameObject Scared;
 
 
     // How far the ground detectors can trigger
@@ -40,6 +41,11 @@ public class Movement : MonoBehaviour
         {
             spriteRenderer = Scared.GetComponent<SpriteRenderer>();
             animator = Scared.GetComponent<Animator>();
+        }
+        else
+        {
+            spriteRenderer = Happy.GetComponent<SpriteRenderer>();
+            animator = Happy.GetComponent<Animator>();
         }
 
         // These depend on "ThomasAnim" Animator's bools!
