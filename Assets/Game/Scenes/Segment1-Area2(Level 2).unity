@@ -80782,8 +80782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784092448}
-  - component: {fileID: 784092447}
-  - component: {fileID: 784092446}
+  - component: {fileID: 784092449}
   m_Layer: 0
   m_Name: ResetLevel
   m_TagString: Untagged
@@ -80791,59 +80790,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &784092446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784092445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b12253cfd341aa46a3a6fcba7709af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showInfo: 1
-  _explanation: Switches to scene MainMenu
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  sceneName: MainMenu
---- !u!114 &784092447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784092445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac24d8e98e97620458dc0c6fbe26a958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showInfo: 1
-  _explanation: "When key Escape is pressed:\n          switches to scene MainMenu\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 784092446}
-  inputType: 1
-  buttonName: 
-  key: 27
-  axis: 
-  deadArea: {x: -0.2, y: 0.2}
-  continuous: 0
-  negate: 0
-  useCooldown: 0
-  cooldown: 1
-  elseActions: []
 --- !u!4 &784092448
 Transform:
   m_ObjectHideFlags: 0
@@ -80859,6 +80805,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &784092449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784092445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3084f2e28c4c7a145bbfa7a5d7bb91c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnMainMenu
+  sceneChange: MainMenu
 --- !u!1 &784363046
 GameObject:
   m_ObjectHideFlags: 0
@@ -304704,6 +304663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelEnd
   endTime: 10.5
   sceneChange: MainMenu
+  AudioSource: {fileID: 0}
   endTheme: {fileID: 8300000, guid: 68c7b22d52af5344fb33f50e7b844a9c, type: 3}
 --- !u!1 &8988164316794869998
 GameObject:

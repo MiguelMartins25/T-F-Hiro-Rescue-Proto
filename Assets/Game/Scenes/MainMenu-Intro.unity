@@ -400,6 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 145164491}
   - component: {fileID: 145164492}
+  - component: {fileID: 145164493}
   m_Layer: 0
   m_Name: MainMenuButtons
   m_TagString: Untagged
@@ -448,6 +449,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &145164493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145164490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51212b7737ed4a94e96da693b03c2d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeepButtonSelected
+  defaultSelection: {fileID: 128257287}
 --- !u!1 &212879430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,6 +2719,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951939859}
   m_CullTransparentMesh: 1
+--- !u!1 &1002817624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002817625}
+  - component: {fileID: 1002817626}
+  m_Layer: 0
+  m_Name: MouseDisable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1002817625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002817624}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3345.4688, y: -1356.8737, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002817626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002817624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e435a3369d1d19e41af56459a0439036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDisable
 --- !u!1 &1036574869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4812,3 +4870,4 @@ SceneRoots:
   - {fileID: 1819748941}
   - {fileID: 1438269359}
   - {fileID: 864874664}
+  - {fileID: 1002817625}
