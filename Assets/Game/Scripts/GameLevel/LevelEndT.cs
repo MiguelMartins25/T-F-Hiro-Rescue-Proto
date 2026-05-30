@@ -1,14 +1,13 @@
-using OkapiKit;
-using Unity.VisualScripting;
 using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class LevelEndT : MonoBehaviour
 {
     [SerializeField] private float endTime;
     [SerializeField] private string sceneChange;
+    [SerializeField] private GameObject AudioSource;
     public AudioClip endTheme;
+    private AudioSource audioPlayer;
     private float      timePassed = 0.0f;
     private bool       endLevel = false;
     private bool       themeIsPlaying = false;
@@ -16,7 +15,7 @@ public class LevelEndT : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        audioPlayer = AudioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,14 +40,12 @@ public class LevelEndT : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
-        Debug.Log("Collision");
         endLevel = true;
     }
 
     void DeltatimePassed()
     {
         timePassed = timePassed + Time.deltaTime;
-        Debug.Log(timePassed);
     }
 
     void FixedUpdate()
@@ -58,6 +55,6 @@ public class LevelEndT : MonoBehaviour
 
     void EndTheme()
     {
-        SoundManager.PlaySound(endTheme);
+        audioPlayer.PlayOneShot(endTheme);
     }
 }
