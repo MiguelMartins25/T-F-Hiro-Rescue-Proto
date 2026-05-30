@@ -125734,7 +125734,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 22909fce54da7dd4e873cb1ad72d72db, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1796ca2f28d1ff34fa3bc3fc98640272, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -129307,14 +129307,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: Switches to scene MainMenu-Intro
+  _explanation: Switches to scene MainMenu
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  sceneName: MainMenu-Intro
+  sceneName: MainMenu
 --- !u!114 &784092447
 MonoBehaviour:
   m_ObjectHideFlags: 0
