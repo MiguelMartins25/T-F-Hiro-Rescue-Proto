@@ -81697,6 +81697,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  Happy: {fileID: 283704037}
+  Scared: {fileID: 1661782248}
   spriteRenderer: {fileID: 283704040}
   animator: {fileID: 283704038}
   sparkSprites:
@@ -81707,7 +81709,6 @@ MonoBehaviour:
   - {fileID: 1035259712}
   - {fileID: 142306328}
   - {fileID: 1660435893}
-  Scared: {fileID: 1661782248}
   rayLength: 350
 --- !u!1 &845760618
 GameObject:
@@ -272354,14 +272355,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
   _showInfo: 1
-  _explanation: Disables this object
+  _explanation: Disables object Dialogue
   description: 
   enableAction: 1
   hasTags: 0
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  target: {fileID: 0}
+  target: {fileID: 1556625614}
   state: 1
 --- !u!114 &1304013092
 MonoBehaviour:
@@ -272401,8 +272402,8 @@ MonoBehaviour:
   _explanation: "When a collision with a trigger with tags [Player] starts:\n         
     enables component SpencerCamera (UnityEngine.Camera)\n          disables component
     EncounterCamera (UnityEngine.Camera)\n          disables object EncounterComponents\n         
-    disables this object\n          enables object EndTimer\n          enables object
-    Spencer'sTheme\n          enables object Spencer'sTheme\n"
+    disables object Dialogue\n          enables object EndTimer\n          enables
+    object Spencer'sTheme\n          enables object Spencer'sTheme\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -272601,7 +272602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
   _showInfo: 1
-  _explanation: Disables component Player (PlayerThomas)
+  _explanation: 'Disables component [Undefined]'
   description: 
   enableAction: 1
   hasTags: 0
@@ -300889,7 +300890,7 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  target: {fileID: 0}
+  target: {fileID: 1661782248}
   state: 1
 --- !u!114 &1935692815
 MonoBehaviour:
@@ -300911,7 +300912,7 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions: []
-  target: {fileID: 0}
+  target: {fileID: 283704037}
   state: 0
 --- !u!114 &1935692816
 MonoBehaviour:
@@ -301020,7 +301021,7 @@ MonoBehaviour:
     enables object ThomasHappy\n          disables object ThomasScared\n         
     disables object KeepThomasInBush\n          enables object LevelAudioSource\n         
     disables object Thomas'sFacesScared\n          enables object Thomas'sFaces\n         
-    enables component Player (PlayerThomas)\n          disables object SpencerEncounter\n"
+    enables component [Undefined]\n          disables object SpencerEncounter\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 0
@@ -301112,7 +301113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
   _showInfo: 1
-  _explanation: Enables component Player (PlayerThomas)
+  _explanation: 'Enables component [Undefined]'
   description: 
   enableAction: 1
   hasTags: 0
