@@ -1,19 +1,25 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    [SerializeField] private GameObject Smoke;
     private Transform obstacleLocation;
     //Radius of collison check
     [SerializeField] private float playerDetectionRadius;
     //Pivot of player collision area
     [SerializeField] private LayerMask player;
+    [SerializeField] private AudioClip disappearSound;
+    [SerializeField] private float audioScale;
     private bool onCollision;
-    private GameObject parentObject;
+    [SerializeField] private AudioSource audioSource;
     private bool destroy = false;
+    private Vector3 equalValues;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        equalValues = this.gameObject.transform.position;
         obstacleLocation = gameObject.transform;
     }
 
@@ -24,7 +30,9 @@ public class Obstacle : MonoBehaviour
 
         if (onCollision == true && destroy == true)
         {
-            this.gameObject.SetActive(false);
+            Instantiate(Smoke, equalValues, quaternion.identity);
+            audioSource.PlayOneShot(disappearSound, audioScale);
+            Destroy(gameObject);
         }
     }
 
