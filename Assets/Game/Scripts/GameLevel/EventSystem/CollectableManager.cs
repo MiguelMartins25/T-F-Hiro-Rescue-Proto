@@ -3,6 +3,7 @@ using UnityEngine;
 public class CollectableManager : MonoBehaviour
 {
     private int sparePartsAmount = 0;
+    private bool levelLostWagon = false;
     [SerializeField] private GameObject SPUIcounter;
     private SparePartsUI script;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,5 +21,10 @@ public class CollectableManager : MonoBehaviour
     public void IncreaseSpareParts()
     {
         sparePartsAmount += 1;
+    }
+
+    public void LevelLWConfirmation(bool confirm)
+    {
+        levelLostWagon = confirm;
     }
 }
