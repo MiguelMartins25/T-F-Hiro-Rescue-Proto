@@ -3,7 +3,7 @@ using UnityEngine;
 public class Cameramanager : MonoBehaviour
 {
     [SerializeField] private GameObject Camera;
-    [SerializeField] private Transform target1;
+    public Transform target1;
     [SerializeField] private Transform target2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
