@@ -48,9 +48,10 @@ public class ThomasFacesSystem : MonoBehaviour
             Backwards.SetActive(true);
         }
 
-        if(whistling == true)
+        if (whistling)
         {
             WhistleFace.SetActive(true);
+            collisionTimer = 2.0f;
         }
         
         if (collision)
@@ -65,6 +66,7 @@ public class ThomasFacesSystem : MonoBehaviour
             if (collisionTimer <= 0.0f)
             {
                 CollisionFace.SetActive(false);
+                WhistleFace.SetActive(false);
             }
         }
 

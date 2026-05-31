@@ -45,19 +45,24 @@ public class Movement : MonoBehaviour
     public float rayLength = 500f;
     [SerializeField] private GameObject FaceSystem;
     private ThomasFacesSystem faceScript;
+    [SerializeField] private GameObject FaceSystem2;
+    private ThomasFacesSystem faceScript2;
 
     void Start()
     {
         faceScript = FaceSystem.gameObject.GetComponent<ThomasFacesSystem>();
+        faceScript2 = FaceSystem2.gameObject.GetComponent<ThomasFacesSystem>();
     }
 
     // Updates every frame
     private void Update()
     {
         CollisionDetect();
-        
+
         faceScript.CurrentPlayerSpeed(speed);
         faceScript.IfCollision(onCollision);
+        faceScript2.CurrentPlayerSpeed(speed);
+        faceScript2.IfCollision(onCollision);
 
         // Gets the direction the player is pressing
         horizontal = Input.GetAxisRaw("Horizontal");

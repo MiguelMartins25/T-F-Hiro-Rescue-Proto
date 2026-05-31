@@ -14,11 +14,14 @@ public class Whistle : MonoBehaviour
     [SerializeField] private AudioSource audioPlayer;
     [SerializeField] private GameObject FaceSystem;
     private ThomasFacesSystem systemScript;
+    [SerializeField] private GameObject FaceSystem2;
+    private ThomasFacesSystem systemScript2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         systemScript = FaceSystem.gameObject.GetComponent<ThomasFacesSystem>();
+        systemScript2 = FaceSystem2.gameObject.GetComponent<ThomasFacesSystem>();
     }
 
     // Update is called once per frame
@@ -48,6 +51,7 @@ public class Whistle : MonoBehaviour
         controller2.WhistleVerification(whistle);
 
         systemScript.IfWhistle(whistle);
+        systemScript2.IfWhistle(whistle);
     }
 
     void FixedUpdate()
