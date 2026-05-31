@@ -11,13 +11,16 @@ public class LevelEndT : MonoBehaviour
     private float      timePassed = 0.0f;
     private bool       endLevel = false;
     private bool       themeIsPlaying = false;
-   [SerializeField] private GameObject FaceSystem;
+    [SerializeField] private GameObject FaceSystem;
     private ThomasFacesSystem systemScript;
+    [SerializeField] private GameObject EndFade;
+    [SerializeField] private GameObject Player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         audioPlayer = AudioSource.GetComponent<AudioSource>();
         systemScript = FaceSystem.GetComponent<ThomasFacesSystem>();
+        EndFade.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +28,8 @@ public class LevelEndT : MonoBehaviour
     {
         if(endLevel == true)
         {
+            EndFade.gameObject.SetActive(true);
+            Player.gameObject.SetActive(false);
             DeltatimePassed();
             if (themeIsPlaying == false)
             {
@@ -60,6 +65,7 @@ public class LevelEndT : MonoBehaviour
 
     void EndTheme()
     {
+        audioPlayer.Stop();
         audioPlayer.PlayOneShot(endTheme);
     }
 }
