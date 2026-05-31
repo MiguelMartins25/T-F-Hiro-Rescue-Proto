@@ -20,6 +20,15 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform rearWheel;
     [SerializeField] private LayerMask groundLayer;
 
+    [SerializeField] private Transform playerPivot;
+    //Radius of collison check
+    [SerializeField] private float collisionDetectionRadius;
+    //Pivot of player collision area
+    [SerializeField] private LayerMask collisionLayer;
+    [SerializeField] private float collisionCooldown;
+    private bool            onCollision = false;
+    private float           collisionTimer = 0.0f;
+
     // Sprite-related
     [SerializeField] public GameObject Happy;
     [SerializeField] public GameObject Scared;
@@ -38,8 +47,17 @@ public class Movement : MonoBehaviour
     // Updates every frame
     private void Update()
     {
+        CollisionDetect();
         // Gets the direction the player is pressing
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        collisionTimer += Time.deltaTime;
+        if (speed != 0 && onCollision == true)
+            if (collisionTimer > collisionCooldown)
+            {
+                speed = -speed/2;
+                collisionTimer = 0.0f;
+            }
 
         if (Scared.activeInHierarchy == true)
         {
@@ -214,5 +232,14 @@ public class Movement : MonoBehaviour
     void StopPuffing()
     {
         audioPlayer.Stop();
+    }
+
+        void CollisionDetect()
+    {
+        onCollision = false;
+
+        Collider2D colliding = Physics2D.OverlapCircle(playerPivot.position, collisionDetectionRadius, collisionLayer);
+        if (colliding != null)
+            onCollision = true;
     }
 }
