@@ -43,11 +43,22 @@ public class Movement : MonoBehaviour
 
     // How far the ground detectors can trigger
     public float rayLength = 500f;
+    [SerializeField] private GameObject FaceSystem;
+    private ThomasFacesSystem faceScript;
+
+    void Start()
+    {
+        faceScript = FaceSystem.gameObject.GetComponent<ThomasFacesSystem>();
+    }
 
     // Updates every frame
     private void Update()
     {
         CollisionDetect();
+        
+        faceScript.CurrentPlayerSpeed(speed);
+        faceScript.IfCollision(onCollision);
+
         // Gets the direction the player is pressing
         horizontal = Input.GetAxisRaw("Horizontal");
 
