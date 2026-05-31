@@ -79843,6 +79843,9 @@ MonoBehaviour:
   - {fileID: 1035259712}
   - {fileID: 142306328}
   - {fileID: 1660435893}
+  audioPlayer: {fileID: 568957880}
+  puffing: {fileID: 8300000, guid: f985a7b35a826d540842b4617e27ab82, type: 3}
+  puffingCooldown: 0.7
   rayLength: 350
 --- !u!1 &845760618
 GameObject:
@@ -276620,7 +276623,7 @@ Transform:
   m_GameObject: {fileID: 1378518351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 148.3, y: -1783.4, z: 0}
+  m_LocalPosition: {x: 367.2317, y: -1783.4, z: 0}
   m_LocalScale: {x: 1, y: -0.71, z: -0.71}
   m_ConstrainProportionsScale: 0
   m_Children: []

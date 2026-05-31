@@ -11,13 +11,12 @@ public class Whistle : MonoBehaviour
     [SerializeField] private AudioClip whistleSound;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject AudioSource;
-    private AudioSource audioPlayer;
+    [SerializeField] private AudioSource audioPlayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        audioPlayer = AudioSource.GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame

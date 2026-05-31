@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Animations;
 
@@ -26,7 +27,10 @@ public class Movement : MonoBehaviour
     [SerializeField] public Animator animator;
     [SerializeField] public SpriteRenderer[] sparkSprites;
     [SerializeField] public Animator[] sparks;
-
+    [SerializeField] private AudioSource audioPlayer;
+    [SerializeField] private AudioClip puffing;
+    [SerializeField] private float puffingCooldown;
+    private float puffingTime;
 
     // How far the ground detectors can trigger
     public float rayLength = 500f;
@@ -49,7 +53,7 @@ public class Movement : MonoBehaviour
         }
 
         // These depend on "ThomasAnim" Animator's bools!
-        if (horizontal > 0)
+        if (speed > 0)
         {
             animator.SetBool("isWalking", true);
         }
@@ -58,7 +62,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("isWalking", false);
         }
 
-        if (horizontal < 0)
+        if (speed < 0)
         {
             animator.SetBool("isReverse", true);
         }
@@ -91,6 +95,12 @@ public class Movement : MonoBehaviour
         // Basically saying - "If grounded"
         if (frontHit && rearHit)
         {
+            puffingTime += Time.deltaTime;
+            if (speed != 0)
+                PlayPuffing();
+            else
+                StopPuffing();
+
             // Forward
             if (horizontal > 0)
             {
@@ -190,5 +200,19 @@ public class Movement : MonoBehaviour
                 10f * Time.fixedDeltaTime // Smooth!
                 );
         }
+    }
+
+    void PlayPuffing()
+    {
+        if(puffingTime >= puffingCooldown)
+        {
+            audioPlayer.PlayOneShot(puffing);
+            puffingTime = 0.0f;
+        }
+    }
+
+    void StopPuffing()
+    {
+        audioPlayer.Stop();
     }
 }
