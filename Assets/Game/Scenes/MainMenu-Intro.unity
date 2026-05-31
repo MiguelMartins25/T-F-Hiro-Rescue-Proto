@@ -3959,7 +3959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d6c0764faf3ae49b0c8c647e0cd772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntroTimer
-  enableMainMenuOnTime: 8
+  enableMainMenuOnTime: 11
   MainMenu: {fileID: 639093532}
   Luso: {fileID: 594970767}
   eightyth: {fileID: 1548454541}

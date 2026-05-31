@@ -1281,7 +1281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &19559813
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,11 +1291,11 @@ Transform:
   m_GameObject: {fileID: 19559812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 400.8374, y: 127.05737, z: 0}
+  m_LocalPosition: {x: 125.6, y: 165.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1935692805}
+  m_Father: {fileID: 1788460915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &19559814
 BoxCollider2D:
@@ -78247,6 +78247,8 @@ MonoBehaviour:
   spencerWhistle: {fileID: 8300000, guid: 355a30a29b341c042a2f2b906f05ddef, type: 3}
   happyPlayer: {fileID: 283704037}
   scaredPlayer: {fileID: 1661782248}
+  happyFacesPlayer: {fileID: 718837985}
+  scaredFacesPlayer: {fileID: 1693671420}
   ownCollider: {fileID: 627899825}
 --- !u!1 &628345711
 GameObject:
@@ -81578,7 +81580,7 @@ Transform:
   m_GameObject: {fileID: 828852022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 615.7, y: -311, z: 0}
+  m_LocalPosition: {x: 661.2, y: -311, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -81703,6 +81705,7 @@ MonoBehaviour:
   puffingCooldown: 0.7
   rayLength: 350
   FaceSystem: {fileID: 718837985}
+  FaceSystem2: {fileID: 1693671420}
 --- !u!1 &845760618
 GameObject:
   m_ObjectHideFlags: 0
@@ -99277,7 +99280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
-  _explanation: "After 12 seconds, trigger the actions::\n          toggles object
+  _explanation: "After 10 seconds, trigger the actions::\n          toggles object
     Dialogue\n"
   description: 
   enableTrigger: 1
@@ -99290,7 +99293,7 @@ MonoBehaviour:
   startTriggered: 0
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 12, y: 12}
+  timeInterval: {x: 10, y: 10}
 --- !u!114 &1123226529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99370,7 +99373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
   _showInfo: 1
-  _explanation: "After 6 seconds, trigger the actions::\n          enables object
+  _explanation: "After 5 seconds, trigger the actions::\n          enables object
     Face2\n          toggles object Text(Oh no!)\n          toggles object Text(Hide!)\n"
   description: 
   enableTrigger: 1
@@ -99387,7 +99390,7 @@ MonoBehaviour:
   startTriggered: 0
   initialDelayEnable: 0
   initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 6, y: 6}
+  timeInterval: {x: 5, y: 5}
 --- !u!114 &1123226533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272583,15 +272586,7 @@ GameObject:
   - component: {fileID: 1304013089}
   - component: {fileID: 1304013097}
   - component: {fileID: 1304013096}
-  - component: {fileID: 1304013095}
-  - component: {fileID: 1304013099}
   - component: {fileID: 1304013098}
-  - component: {fileID: 1304013092}
-  - component: {fileID: 1304013091}
-  - component: {fileID: 1304013090}
-  - component: {fileID: 1304013100}
-  - component: {fileID: 1304013101}
-  - component: {fileID: 1304013102}
   m_Layer: 0
   m_Name: EndHitbox
   m_TagString: Untagged
@@ -272614,114 +272609,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1788460915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1304013090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object EndTimer
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1935692804}
-  state: 0
---- !u!114 &1304013091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object Dialogue
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1556625614}
-  state: 1
---- !u!114 &1304013092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object EncounterComponents
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1550563064}
-  state: 1
---- !u!114 &1304013095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b66a51b7fe64c4390ac471b7df316b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnCollision
-  _showInfo: 1
-  _explanation: "When a collision with a trigger with tags [Player] starts:\n         
-    enables component SpencerCamera (UnityEngine.Camera)\n          disables component
-    EncounterCamera (UnityEngine.Camera)\n          disables object EncounterComponents\n         
-    disables object Dialogue\n          enables object EndTimer\n          enables
-    object Spencer'sTheme\n          enables object Spencer'sTheme\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 1304013098}
-  - delay: 0
-    action: {fileID: 1304013099}
-  - delay: 0
-    action: {fileID: 1304013092}
-  - delay: 0
-    action: {fileID: 1304013091}
-  - delay: 0
-    action: {fileID: 1304013090}
-  - delay: 0
-    action: {fileID: 1304013100}
-  - delay: 0
-    action: {fileID: 1304013100}
-  isTrigger: 1
-  eventType: 0
-  tags:
-  - {fileID: 11400000, guid: 15edcc3cfa00a4e2fba5f80bcf8774c8, type: 2}
 --- !u!61 &1304013096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -272804,107 +272691,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304013088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fcf70692db27be4ea4d552dd4f46f35, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: Enables component SpencerCamera (UnityEngine.Camera)
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 0}
-  state: 0
---- !u!114 &1304013099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: Disables component EncounterCamera (UnityEngine.Camera)
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 0}
-  state: 1
---- !u!114 &1304013100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object Spencer'sTheme
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1566266203}
-  state: 0
---- !u!114 &1304013101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object KeepThomasInBush
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 19559812}
-  state: 0
---- !u!114 &1304013102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304013088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: 'Disables component [Undefined]'
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 0}
-  state: 1
+  m_EditorClassIdentifier: Assembly-CSharp::EncounterEnd
+  normalCameraLimits: {fileID: 2092555407}
+  cameraObject: {fileID: 1378518351}
+  encounterComponents: {fileID: 1550563064}
+  audioSource: {fileID: 568957880}
+  SpencerTheme: {fileID: 8300000, guid: c6ade6b4f8726b34bb04fe6536f97562, type: 3}
+  normalTheme: {fileID: 8300000, guid: 22909fce54da7dd4e873cb1ad72d72db, type: 3}
+  happyPlayer: {fileID: 283704037}
+  scaredPlayer: {fileID: 1661782248}
+  happyFacesPlayer: {fileID: 718837985}
+  scaredFacesPlayer: {fileID: 1693671420}
+  ownCollider: {fileID: 1304013096}
+  Signal1: {fileID: 1394119669}
+  Signal2: {fileID: 1564612773}
+  Spencer: {fileID: 1600089969}
+  Walls: {fileID: 19559812}
+  cameraManager: {fileID: 1832671718}
+  focusDuration: 17
 --- !u!1 &1307748879
 GameObject:
   m_ObjectHideFlags: 0
@@ -273285,54 +273091,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317754041}
   m_CullTransparentMesh: 1
---- !u!1 &1318574977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1318574979}
-  - component: {fileID: 1318574978}
-  m_Layer: 0
-  m_Name: OkapiSoundManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1318574978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318574977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2693f9c8caf81046837996718175889, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.SoundManager
-  _showInfo: 1
-  _explanation: This system is responsible for playing all sounds in the game
-  description: 
-  defaultMixerOutput: {fileID: 24300002, guid: 247932430e043864f818be99ce7e8609, type: 2}
---- !u!4 &1318574979
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318574977}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1959.1587, y: -41.01654, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320099571
 GameObject:
   m_ObjectHideFlags: 0
@@ -290947,135 +290705,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1441868683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1441868684}
-  - component: {fileID: 1441868685}
-  m_Layer: 0
-  m_Name: EncounterMusic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1441868684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441868683}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 220.6394, y: -199.34229, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1550563065}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1441868685
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441868683}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b5452c4d5a6a2994c9328005b26904f2, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1443735983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293738,7 +293367,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1441868684}
   - {fileID: 316294009}
   - {fileID: 1123226527}
   m_Father: {fileID: 1636625250}
@@ -294332,135 +293960,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1566266203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1566266204}
-  - component: {fileID: 1566266205}
-  m_Layer: 0
-  m_Name: Spencer'sTheme
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1566266204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566266203}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -309.33032, y: 178.55664, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1788460915}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1566266205
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566266203}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c6ade6b4f8726b34bb04fe6536f97562, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1574801092
 GameObject:
   m_ObjectHideFlags: 0
@@ -295817,7 +295316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1657651276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -297481,8 +296980,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1304013089}
-  - {fileID: 1566266204}
-  - {fileID: 1935692805}
+  - {fileID: 19559813}
   m_Father: {fileID: 1636625250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792537674
@@ -298706,7 +298204,7 @@ Transform:
   m_GameObject: {fileID: 1860476604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -395, y: -319, z: 0}
+  m_LocalPosition: {x: -394.1, y: -319, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -299265,491 +298763,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 34.796387, y: 37.806763}
   m_EdgeRadius: 0
---- !u!1 &1935692804
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1935692805}
-  - component: {fileID: 1935692806}
-  - component: {fileID: 1935692808}
-  - component: {fileID: 1935692807}
-  - component: {fileID: 1935692810}
-  - component: {fileID: 1935692809}
-  - component: {fileID: 1935692820}
-  - component: {fileID: 1935692819}
-  - component: {fileID: 1935692818}
-  - component: {fileID: 1935692817}
-  - component: {fileID: 1935692816}
-  - component: {fileID: 1935692815}
-  - component: {fileID: 1935692814}
-  - component: {fileID: 1935692813}
-  - component: {fileID: 1935692812}
-  - component: {fileID: 1935692811}
-  - component: {fileID: 1935692822}
-  - component: {fileID: 1935692821}
-  - component: {fileID: 1935692823}
-  m_Layer: 0
-  m_Name: EndTimer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1935692805
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -237.13745, y: 32.442627, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 19559813}
-  m_Father: {fileID: 1788460915}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1935692806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46216fa097ecb754babda0f26d640422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
-  _showInfo: 1
-  _explanation: "After 15 seconds, trigger the actions::\n          disables object
-    SignalStop\n          enables object SignalContinue\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 0
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 1935692809}
-  - delay: 0
-    action: {fileID: 1935692810}
-  startTriggered: 0
-  initialDelayEnable: 0
-  initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 15, y: 15}
---- !u!114 &1935692807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object Spencer
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1600089969}
-  state: 0
---- !u!114 &1935692808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe33e4a0e2979294d8e04d307e34bb03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnStart
-  _showInfo: 1
-  _explanation: "When this object is created:\n          enables object Spencer\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 1
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 1935692807}
---- !u!114 &1935692809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object SignalStop
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1394119669}
-  state: 1
---- !u!114 &1935692810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object SignalContinue
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1564612773}
-  state: 0
---- !u!114 &1935692811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object SpencerEncounter
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1636625249}
-  state: 1
---- !u!114 &1935692812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object LevelAudioSource
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 568957879}
-  state: 0
---- !u!114 &1935692813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object KeepThomasInBush
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 19559812}
-  state: 1
---- !u!114 &1935692814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object ThomasScared
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1661782248}
-  state: 1
---- !u!114 &1935692815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object ThomasHappy
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 283704037}
-  state: 0
---- !u!114 &1935692816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object SpencerEncounterCameraBounds
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1657651275}
-  state: 1
---- !u!114 &1935692817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object CameraBoundingBox
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 2092555406}
-  state: 0
---- !u!114 &1935692818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: Enables component Main Camera (UnityEngine.Camera)
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1378518353}
-  state: 0
---- !u!114 &1935692819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: Disables component SpencerCamera (UnityEngine.Camera)
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 0}
-  state: 1
---- !u!114 &1935692820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46216fa097ecb754babda0f26d640422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.TriggerOnTimer
-  _showInfo: 1
-  _explanation: "After 17 seconds, trigger the actions::\n          disables component
-    SpencerCamera (UnityEngine.Camera)\n          enables component Main Camera (UnityEngine.Camera)\n         
-    enables object CameraBoundingBox\n          disables object SpencerEncounterCameraBounds\n         
-    enables object ThomasHappy\n          disables object ThomasScared\n         
-    disables object KeepThomasInBush\n          enables object LevelAudioSource\n         
-    disables object Thomas'sFacesScared\n          enables object Thomas'sFaces\n         
-    enables component [Undefined]\n          disables object SpencerEncounter\n"
-  description: 
-  enableTrigger: 1
-  allowRetrigger: 0
-  hasPreconditions: 0
-  preConditions: []
-  actions:
-  - delay: 0
-    action: {fileID: 1935692819}
-  - delay: 0
-    action: {fileID: 1935692818}
-  - delay: 0
-    action: {fileID: 1935692817}
-  - delay: 0
-    action: {fileID: 1935692816}
-  - delay: 0
-    action: {fileID: 1935692815}
-  - delay: 0
-    action: {fileID: 1935692814}
-  - delay: 0
-    action: {fileID: 1935692813}
-  - delay: 0
-    action: {fileID: 1935692812}
-  - delay: 0
-    action: {fileID: 1935692821}
-  - delay: 0
-    action: {fileID: 1935692822}
-  - delay: 0
-    action: {fileID: 1935692823}
-  - delay: 0
-    action: {fileID: 1935692811}
-  startTriggered: 0
-  initialDelayEnable: 0
-  initialDelay: {x: 5, y: 5}
-  timeInterval: {x: 17, y: 17}
---- !u!114 &1935692821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Disables object Thomas'sFacesScared
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 1693671420}
-  state: 1
---- !u!114 &1935692822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6c4cd7728b890f44ab45fb8ca143d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeObjectState
-  _showInfo: 1
-  _explanation: Enables object Thomas'sFaces
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 718837985}
-  state: 0
---- !u!114 &1935692823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935692804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e9241509df85c44871f6a996f27c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: OkapiKit::OkapiKit.ActionChangeComponentState
-  _showInfo: 1
-  _explanation: 'Enables component [Undefined]'
-  description: 
-  enableAction: 1
-  hasTags: 0
-  actionTags: []
-  hasConditions: 0
-  actionConditions: []
-  target: {fileID: 0}
-  state: 0
 --- !u!1 &1965763899
 GameObject:
   m_ObjectHideFlags: 0
@@ -302826,6 +301839,7 @@ MonoBehaviour:
   animator: {fileID: 284932437}
   audioPlayer: {fileID: 568957880}
   FaceSystem: {fileID: 718837985}
+  FaceSystem2: {fileID: 1693671420}
 --- !u!82 &8988164316794870000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -302950,7 +301964,6 @@ SceneRoots:
   - {fileID: 7654576804793933566}
   - {fileID: 797987601946560570}
   - {fileID: 568957881}
-  - {fileID: 1318574979}
   - {fileID: 1050940741}
   - {fileID: 222246402}
   - {fileID: 815459605}

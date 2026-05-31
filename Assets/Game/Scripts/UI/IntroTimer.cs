@@ -17,11 +17,11 @@ public class IntroTimer : MonoBehaviour
     void Update()
     {
         timePassed = timePassed + Time.deltaTime;
-        if(timePassed >= enableMainMenuOnTime - 6.0f)
+        if(timePassed >= enableMainMenuOnTime - 5.0f)
         {
             Luso.enabled = true;
         }
-        if(timePassed >= enableMainMenuOnTime - 4.0f)
+        if(timePassed >= enableMainMenuOnTime - 2.5f)
         {
             eightyth.enabled = true;
         }
