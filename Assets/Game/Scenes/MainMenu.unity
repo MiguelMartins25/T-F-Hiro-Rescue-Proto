@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d903e2d993a6f11419faf780cdd66a0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartButton
-  sceneChange: Segment1-Area2(Level 2)
+  sceneChange: LoadingScreen
   audioSource: {fileID: 1438269361}
   hiroWhistle: {fileID: 8300000, guid: 34ff4c57f1f9832489a68ba9bdfb68bd, type: 3}
   wheeshSound: {fileID: 8300000, guid: a7fa65dbeccaab14fa235c780de674b0, type: 3}
