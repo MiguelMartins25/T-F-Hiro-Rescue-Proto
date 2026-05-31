@@ -1,5 +1,3 @@
-using OkapiKit;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerThomas : MonoBehaviour
@@ -12,18 +10,10 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private float maxSpeed = 150;
     //Max character acceleration
     [SerializeField] private float maxAcceleration = 50;
-    //Rate of acelaration lost after no inputs
+    //Rate of acceleration lost after no inputs
     [SerializeField] private float accelerationDecrease = 1;
-    //How fast speed drecreases after reaching 0 acceleration
+    //How fast speed decreases after reaching 0 acceleration
     [SerializeField] private float frictionPower = 2;
-    //Check ground collision
-    [SerializeField] private Transform groundCheck;
-    //Radius of groundcheck
-    [SerializeField] private float groundCheckRadius;
-    //Which layer check for ground check
-    [SerializeField] private LayerMask groundLayer;
-    //Gracity applied to player while moving
-    [SerializeField] private float movingGravity = 5;
     //Area for player collision check
     [SerializeField] private Transform playerPivot;
     //Radius of collison check
@@ -32,19 +22,15 @@ public class PlayerThomas : MonoBehaviour
     [SerializeField] private LayerMask collisionLayer;
     //Time between bounce of collision
     [SerializeField] private float collisionCooldown;
-    //End the level detection
-    [SerializeField] private LayerMask levelEndTouch;
-
+    [SerializeField] private GameObject AudioSource;
     private Rigidbody2D     rb;
-    private bool            onGround;
     private bool            onCollision;
-    private bool            levelEnd;
     private float           collisionTimer = 0.0f;
     [SerializeField] private float puffingCooldown = 0.0f;
-    [SerializeField] private float accelerationRate = 20.0f;
-
+    [SerializeField] private float accelerationRate = 60.0f;
+    private AudioSource audioPlayer;
     //Place to put audio in
-    private AudioClip puffing;
+    [SerializeField] private AudioClip puffing;
     //Bool to known when player is moving
     private bool isPuffing = false;
 
@@ -53,13 +39,13 @@ public class PlayerThomas : MonoBehaviour
     {
         //RigidBody of Player
         rb = GetComponent<Rigidbody2D>(); 
+        audioPlayer = AudioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Called Methods
-        //GroundDetect();
         CollisionDetect();
 
         // Horizontal input
@@ -72,18 +58,12 @@ public class PlayerThomas : MonoBehaviour
                 speed = -speed/2;
                 collisionTimer = 0.0f;
             }
-
-        //Makse the player character stop on slopes
-        if (dx == 0 && onGround == true)
-            rb.gravityScale = 0;
-        else
-            rb.gravityScale = movingGravity;
     }
 
     //puffing sound player
     void PuffingSounds()
     {
-        SoundManager.PlaySound(puffing);
+        audioPlayer.PlayOneShot(puffing);
     }
     
     //checks for player and level collidable collision
@@ -95,34 +75,13 @@ public class PlayerThomas : MonoBehaviour
         if (colliding != null)
             onCollision = true;
     }
-
-    //checks for player and ground collisions to be able to stop on slopes
-    void GroundDetect()
-    {
-        onGround = false;
-
-        Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        if (collider != null)
-            onGround = true;
-    }
-
-    //Visualize ground check
-    void OnDrawGizmosSelected()
-    {
-        if (groundCheck)
-        {
-            Gizmos.color = (onGround) ? (Color.black) : (Color.red);
-            Gizmos.DrawSphere(groundCheck.position, groundCheckRadius);
-        }
-    }
-
     void FixedUpdate()
     {
         // Horizontal input
         float dx = Input.GetAxis("Horizontal");
 
         //Acceleration from input
-        acceleration += dx * accelerationRate * Time.fixedDeltaTime;
+        acceleration += (dx * 5) * accelerationRate * Time.fixedDeltaTime;
 
         acceleration = Mathf.Clamp(acceleration, -maxAcceleration, maxAcceleration);
 
@@ -202,4 +161,13 @@ public class PlayerThomas : MonoBehaviour
         }
     }
 
+    public void ChangeMaxSpeed(int addMaxSpeed)
+    {
+        maxSpeed = maxSpeed + addMaxSpeed;
+    }
+
+    public void ChangeMaxAcceleration(int addMaxAcceleration)
+    {
+        maxAcceleration = maxAcceleration + addMaxAcceleration;
+    }
 }

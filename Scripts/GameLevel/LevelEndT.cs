@@ -1,24 +1,60 @@
-using OkapiKit;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LevelEnd : MonoBehaviour
+public class LevelEndT : MonoBehaviour
 {
-    public GameObject 
+    [SerializeField] private float endTime;
+    [SerializeField] private string sceneChange;
+    [SerializeField] private GameObject AudioSource;
+    public AudioClip endTheme;
+    private AudioSource audioPlayer;
+    private float      timePassed = 0.0f;
+    private bool       endLevel = false;
+    private bool       themeIsPlaying = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        audioPlayer = AudioSource.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(endLevel == true)
+        {
+            DeltatimePassed();
+            if (themeIsPlaying == false)
+            {
+                EndTheme();
+                themeIsPlaying = true;
+            }
+        
+
+            if(timePassed >= endTime)
+            {
+                SceneManager.LoadScene(sceneChange);
+            }
+        }
+    }
+
+    void OnTriggerEnter2D()
+    {
+        endLevel = true;
+    }
+
+    void DeltatimePassed()
+    {
+        timePassed = timePassed + Time.deltaTime;
+    }
+
+    void FixedUpdate()
+    {
         
     }
 
-    private void OnCollisionEnter();
+    void EndTheme()
     {
-
+        audioPlayer.PlayOneShot(endTheme);
     }
 }
